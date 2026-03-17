@@ -1,0 +1,81 @@
+====================================================================================================
+PROJECT EXPORT FOR LLMs
+====================================================================================================
+
+PROJECT INFORMATION:
+--------------------------------------------------
+Project Name: config
+Generated On: 2026-03-11 17:24:37 (Europe/Paris / GMT+01:00)
+Total Files Processed: 1
+Export Tool: Easy Whole Project to Single Text File for LLMs v1.1.0
+Tool Author: Jota / José Guilherme Pandolfi
+
+EXPORT CONFIGURATION:
+--------------------------------------------------
+Language: en
+Max File Size: 1 MB
+Include Hidden Files: false
+Output Format: both
+Notification Level: minimal
+Custom File Name Pattern: {workspaceName}-output
+
+================================================================================
+PROJECT STRUCTURE
+================================================================================
+└── 📄 mosquitto.conf (323 B)
+
+================================================================================
+PROJECT STATISTICS
+================================================================================
+Total Files: 1
+Total Directories: 0
+Text Files: 1
+Binary Files: 0
+Total Size: 323 B
+
+FILE TYPES DISTRIBUTION:
+------------------------------
+.conf           : 1
+
+================================================================================
+FILE CODE CONTENTS
+================================================================================
+
+
+================================================================================
+FILE: mosquitto.conf
+================================================================================
+
+FILE INFORMATION:
+----------------------------------------
+Size: 323 B
+Extension: .conf
+Language: text
+Location: mosquitto.conf
+Relative Path: root
+Created: 2026-03-11 17:24:28 (Europe/Paris / GMT+01:00)
+Modified: 2026-03-11 17:24:36 (Europe/Paris / GMT+01:00)
+MD5: 45c0739c51183cef84b173bf2ea6cd4b
+SHA256: 452330c06cb2fbccc8d98696a88cd1e7e04be15f47a78e2bf402f194f957f73f
+Encoding: UTF-8
+
+FILE CONTENT:
+----------------------------------------
+# Port MQTT standard
+listener 1883
+
+# Port WebSocket
+listener 9001
+
+# Autoriser les connexions anonymes (pour les tests)
+allow_anonymous true
+
+# Configuration des logs
+log_dest file /mosquitto/log/mosquitto.log
+log_type all
+
+# Persistance des données
+persistence true
+persistence_location /mosquitto/data/
+
+================================================================================
