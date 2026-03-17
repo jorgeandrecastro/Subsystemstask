@@ -3,8 +3,8 @@
 ## 📊 Project Information
 
 - **Project Name**: `mqtt5`
-- **Generated On**: 2026-03-17 20:02:44 (Europe/Paris / GMT+01:00)
-- **Total Files Processed**: 80
+- **Generated On**: 2026-03-17 20:30:14 (Europe/Paris / GMT+01:00)
+- **Total Files Processed**: 85
 - **Export Tool**: Easy Whole Project to Single Text File for LLMs v1.1.0
 - **Tool Author**: Jota / José Guilherme Pandolfi
 
@@ -29,6 +29,11 @@
 │   │   │   │   └── 📄 packethandler.py (2.33 KB)
 │   │   │   └── 📁 TLMLOADER/
 │   │   │       └── 📄 tlmloader.py (2.6 KB)
+│   │   ├── 📁 photosTest/
+│   │   │   ├── 📄 Capture d'écran 2026-03-17 210423.png (172.72 KB)
+│   │   │   ├── 📄 Capture d'écran 2026-03-17 210752.png (243.25 KB)
+│   │   │   ├── 📄 Capture d'écran 2026-03-17 210928.png (335.41 KB)
+│   │   │   └── 📄 Capture d'écran 2026-03-17 211055.png (461.28 KB)
 │   │   ├── 📁 targets/
 │   │   │   └── 📁 OBC/
 │   │   │       ├── 📁 cmd_tlm/
@@ -49,6 +54,7 @@
 │   │   ├── 📄 plugin.txt (334 B)
 │   │   ├── 📄 Rakefile (1.44 KB)
 │   │   ├── 📄 README.md (1.8 KB)
+│   │   ├── 📄 Readmeobc.md (4.1 KB)
 │   │   └── 📄 requirements.txt (22 B)
 │   ├── 📁 openc3-cosmos-radio-module/
 │   │   ├── 📁 microservices/
@@ -131,7 +137,7 @@
 ├── 📁 data/
 │   └── 📄 mosquitto.db (47 B)
 ├── 📁 log/
-│   └── 📄 mosquitto.log (2.2 MB)
+│   └── 📄 mosquitto.log (2.33 MB)
 ├── 📄 compose.yml (354 B)
 ├── 📄 pubClient.py (905 B)
 ├── 📄 Readme.md (2.89 KB)
@@ -156,6 +162,7 @@
 - [📄 cosmos-6.10.4/openc3-cosmos-obc-module/LICENSE.txt](#📄-cosmos-6-10-4-openc3-cosmos-obc-module-license-txt)
 - [📄 cosmos-6.10.4/openc3-cosmos-obc-module/plugin.txt](#📄-cosmos-6-10-4-openc3-cosmos-obc-module-plugin-txt)
 - [📄 cosmos-6.10.4/openc3-cosmos-obc-module/README.md](#📄-cosmos-6-10-4-openc3-cosmos-obc-module-readme-md)
+- [📄 cosmos-6.10.4/openc3-cosmos-obc-module/Readmeobc.md](#📄-cosmos-6-10-4-openc3-cosmos-obc-module-readmeobc-md)
 - [📄 cosmos-6.10.4/openc3-cosmos-obc-module/requirements.txt](#📄-cosmos-6-10-4-openc3-cosmos-obc-module-requirements-txt)
 - [📄 cosmos-6.10.4/openc3-cosmos-radio-module/microservices/PACKETHANDLER/packethandler.py](#📄-cosmos-6-10-4-openc3-cosmos-radio-module-microservices-packethandler-packethandler-py)
 - [📄 cosmos-6.10.4/openc3-cosmos-radio-module/microservices/TLMLOADER/tlmloader.py](#📄-cosmos-6-10-4-openc3-cosmos-radio-module-microservices-tlmloader-tlmloader-py)
@@ -203,20 +210,20 @@
 
 | Metric | Count |
 |--------|-------|
-| Total Files | 80 |
-| Total Directories | 37 |
-| Text Files | 53 |
-| Binary Files | 27 |
-| Total Size | 6.64 MB |
+| Total Files | 85 |
+| Total Directories | 38 |
+| Text Files | 54 |
+| Binary Files | 31 |
+| Total Size | 7.96 MB |
 
 ### 📄 File Types Distribution
 
 | Extension | Count |
 |-----------|-------|
+| `.png` | 20 |
 | `.txt` | 18 |
-| `.png` | 16 |
 | `.py` | 11 |
-| `.md` | 8 |
+| `.md` | 9 |
 | `.yaml` | 5 |
 | `.sh` | 4 |
 | `.gem` | 3 |
@@ -466,6 +473,15 @@ if __name__ == "__main__":
 ```
 
 ---
+
+## 🚫 Binary/Excluded Files
+
+The following files were not included in the text content:
+
+- `cosmos-6.10.4/openc3-cosmos-obc-module/photosTest/Capture d'écran 2026-03-17 210423.png`
+- `cosmos-6.10.4/openc3-cosmos-obc-module/photosTest/Capture d'écran 2026-03-17 210752.png`
+- `cosmos-6.10.4/openc3-cosmos-obc-module/photosTest/Capture d'écran 2026-03-17 210928.png`
+- `cosmos-6.10.4/openc3-cosmos-obc-module/photosTest/Capture d'écran 2026-03-17 211055.png`
 
 ### <a id="📄-cosmos-6-10-4-openc3-cosmos-obc-module-targets-obc-cmd-tlm-cmd-txt"></a>📄 `cosmos-6.10.4/openc3-cosmos-obc-module/targets/OBC/cmd_tlm/cmd.txt`
 
@@ -823,6 +839,132 @@ This protects both you and us and you retain full rights to any code you write.
 
 This OpenC3 plugin is released under the MIT License. See [LICENSE.txt](LICENSE.txt)
 
+````
+
+---
+
+### <a id="📄-cosmos-6-10-4-openc3-cosmos-obc-module-readmeobc-md"></a>📄 `cosmos-6.10.4/openc3-cosmos-obc-module/Readmeobc.md`
+
+**File Info:**
+- **Size**: 4.1 KB
+- **Extension**: `.md`
+- **Language**: `text`
+- **Location**: `cosmos-6.10.4/openc3-cosmos-obc-module/Readmeobc.md`
+- **Relative Path**: `cosmos-6.10.4/openc3-cosmos-obc-module`
+- **Created**: 2026-03-17 20:29:29 (Europe/Paris / GMT+01:00)
+- **Modified**: 2026-03-17 20:30:13 (Europe/Paris / GMT+01:00)
+- **MD5**: `e5c286ef8b93e4b99e416b29ee76369d`
+- **SHA256**: `f0c24e053a9a3e020f8558c7bedf2c396cde2b0f203fa28f185d20e7285b4dc3`
+- **Encoding**: UTF-8
+
+**File code content:**
+
+````markdown
+Satellite OBC Module - Lab #2
+OpenC3 COSMOS Integration with Onboard Computer
+Student: Jorge andre Castro
+Course: Satellite Communication Systems
+Institution: Cape Peninsula University of Technology / F'SATI
+1. Overview
+This project implements an independent Onboard Computer (OBC) ground station interface using OpenC3 COSMOS 6.10.4. The system communicates with a virtual satellite OBC via UDP and MQTT protocols, providing real-time command and telemetry capabilities for satellite housekeeping operations.
+2. System Architecture
+plain
+Copy
+┌─────────────┐    UDP     ┌─────────────┐    MQTT    ┌─────────┐
+│   COSMOS    │ ◄────────► │  Packet     │ ◄────────► │  OBC    │
+│   (OBC      │   Port     │  Handler    │   Topic    │  App    │
+│   Target)   │   8090     │  (Python)   │  satelliteSS/obc  │  (Sim)  │
+└─────────────┘            └─────────────┘            └─────────┘
+       ▲                                                       │
+       │                                                       │
+       └───────────────────────────────────────────────────────┘
+                         MQTT Telemetry
+                    (TLMLoader injects to COSMOS)
+3. Command Set (Table 2)
+Table
+Command	Hex Range	Decimal	Function
+SET_DESIGNATOR	0x0200-0x0203	512-515	Assign OBC ID (0-3)
+SET_HK_BEACON_PERIOD	0x0204-0x020E	516-526	Set housekeeping interval
+GET_VERSION	0x020F	527	Request firmware version
+GET_IMAGE	0x0210	528	Request boot images
+GET_UPTIME	0x0211	529	Request startup time
+4. Telemetry Structure
+Table
+Field	Type	Description
+OBC_ID	UINT 8	Designator (0-3)
+UPTIME	UINT 32	Seconds since startup
+FW_VERSION	UINT 16	Firmware (x100)
+BOOT_IMAGE	UINT 8	Current image
+NEXT_IMAGE	UINT 8	Next boot image
+HK_PERIOD	UINT 16	Beacon interval
+TEMP	UINT 16	Temperature (x100)
+VOLTAGE_3V	UINT 16	3.3V rail (x100)
+VOLTAGE_5V	UINT 16	5V rail (x100)
+HK_MESSAGE	STRING	Raw housekeeping data
+5. File Structure
+plain
+Copy
+openc3-cosmos-obc-module/
+├── targets/OBC/cmd_tlm/
+│   ├── cmd.txt          # 5 command definitions
+│   └── tlm.txt          # Telemetry packet structure
+├── microservices/
+│   ├── PACKETHANDLER/
+│   │   └── packethandler.py    # UDP to MQTT bridge
+│   └── TLMLOADER/
+│       └── tlmloader.py        # MQTT to COSMOS injector
+├── plugin.txt           # Interface configuration
+└── openc3-cosmos-obc-module.gemspec
+6. Network Configuration
+Table
+Parameter	Value
+COSMOS Host	192.168.1.84
+UDP Command Port	8090
+MQTT Broker	192.168.1.84:1883
+MQTT Topic	satelliteSS/obc
+7. Build & Run
+Build Plugin
+powershell
+Copy
+cd openc3-cosmos-obc-module
+..\openc3.bat cli rake build VERSION=1.0.0
+Start COSMOS
+powershell
+Copy
+cd ..
+.\openc3.bat start
+Run OBC Simulator
+powershell
+Copy
+.\ObcApp.exe 192.168.1.84
+Run Packet Handler (standalone)
+powershell
+Copy
+cd openc3-cosmos-obc-module\microservices\PACKETHANDLER
+python packethandler.py
+8. Test Results
+All 5 commands validated and operational:
+plain
+Copy
+✅ SET_DESIGNATOR (0x200)      → OBC ID assignment
+✅ SET_HK_BEACON_PERIOD (0x208) → 520s interval set
+✅ GET_VERSION (0x20F)          → Firmware 1.01
+✅ GET_IMAGE (0x210)            → Boot images retrieved
+✅ GET_UPTIME (0x211)           → Startup time received
+9. Key Features
+Independent Module: Separate from Lab #1 COMMS system
+Bidirectional Communication: Commands and telemetry
+Real-time Processing: UDP → MQTT → COSMOS pipeline
+Robust Parsing: Regex-based telemetry extraction
+Standalone Execution: PacketHandler runs outside Docker
+10. Technologies
+OpenC3 COSMOS 6.10.4
+Python 3.11
+MQTT (paho-mqtt 1.6.1)
+UDP Sockets
+Docker Desktop
+Repository: https://github.com/jorgeandrecastro/satelliteSS-cosmos-obc
+Date: March 17, 2026
 ````
 
 ---
@@ -2489,10 +2631,10 @@ accessLog: {}
 - **Language**: `json`
 - **Location**: `cosmos-6.10.4/plugins/DEFAULT/openc3-cosmos-obc-module/plugin_instance.json`
 - **Relative Path**: `cosmos-6.10.4/plugins/DEFAULT/openc3-cosmos-obc-module`
-- **Created**: 2026-03-17 19:55:25 (Europe/Paris / GMT+01:00)
-- **Modified**: 2026-03-17 19:55:25 (Europe/Paris / GMT+01:00)
-- **MD5**: `46e54965c4c74071266940b5db5049fa`
-- **SHA256**: `eba3473b9aba733eca3949ea261ab844463f0c5007a1e0a81d669bb607c98cf2`
+- **Created**: 2026-03-17 20:06:48 (Europe/Paris / GMT+01:00)
+- **Modified**: 2026-03-17 20:06:48 (Europe/Paris / GMT+01:00)
+- **MD5**: `d4fce48002d5d5389e849047d55ecd51`
+- **SHA256**: `50a795634af784d410ac38053d1020b6e564491634f0fae98699964fec893838`
 - **Encoding**: ASCII
 
 **File code content:**
@@ -2529,7 +2671,7 @@ accessLog: {}
   "homepage": "https://github.com/OpenC3/cosmos",
   "repository": null,
   "img_path": null,
-  "updated_at": 1773777325089919441
+  "updated_at": 1773778007748093754
 }
 ```
 
