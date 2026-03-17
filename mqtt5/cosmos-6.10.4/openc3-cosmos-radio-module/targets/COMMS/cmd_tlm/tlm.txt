@@ -1,0 +1,5 @@
+TELEMETRY COMMS STATUS BIG_ENDIAN "Satellite Status and Beacon"
+  ID_ITEM ID 0 16 UINT 0x0100 "Packet Identifier"
+  ITEM MODE      16  16  UINT   "Operating Mode"
+  ITEM FW_VER    32  16  UINT   "Firmware Version"
+  ITEM INACTBEA  48  1024 STRING "Inactivity Beacon Message"

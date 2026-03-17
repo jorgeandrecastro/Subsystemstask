@@ -1,0 +1,33 @@
+{
+  "name": "openc3-cosmos-obc-module-1.0.0.gem__0",
+  "variables": {},
+  "plugin_txt_lines": [
+    "TARGET OBC OBC",
+    "",
+    "INTERFACE OBC_INT udp_interface.rb 192.168.1.84 8090 8091 8092 nil",
+    "  MAP_CMD_TARGET OBC",
+    "  MAP_TLM_TARGET OBC",
+    "",
+    "MICROSERVICE PACKETHANDLER PACKETHANDLER-SERVICE",
+    "  CMD python packethandler.py",
+    "  TARGET_NAME OBC",
+    "  WORK_DIR .",
+    "",
+    "MICROSERVICE TLMLOADER TLMLOADER-SERVICE",
+    "  CMD python tlmloader.py",
+    "  TARGET_NAME OBC",
+    "  WORK_DIR ."
+  ],
+  "needs_dependencies": true,
+  "store_id": null,
+  "title": "OpenC3 openc3-cosmos-obc-module plugin",
+  "description": "openc3-cosmos-obc-module plugin for deployment to OpenC3",
+  "keywords": null,
+  "licenses": [
+    "MIT"
+  ],
+  "homepage": "https://github.com/OpenC3/cosmos",
+  "repository": null,
+  "img_path": null,
+  "updated_at": 1773778007748093754
+}
