@@ -58,3 +58,15 @@ The system is fully operational. Telemetry is received smoothly and the satellit
 1. In VS Code, click on the "New file" icon.
 2. Name it exactly **`README.md`**.
 3. Paste the code block above and save (Ctrl+S).
+
+
+
+
+docker exec -it cosmos-6104-openc3-operator-1 sh
+
+C:\Users\Georg\Desktop\satelliteSS_Lab1\satelliteSS\mqtt5\cosmos-6.10.4
+
+
+..\openc3.bat cli rake build VERSION=1.0.9
+
+./radioModule.exe 127.0.0.1 1883

@@ -1,15 +1,9 @@
-SCREEN 400 350 1.0
-  TITLE "COMMS COMMANDS"
-
-  VERTICALBOX "Command list"
-    HORIZONTALLINE
-    # On crée la case pour taper le chiffre
-    NAMED_WIDGET MODE TEXTFIELD 12 "258"
-    
-    # Le bouton avec le code corrigé (note le .value et l'espace avant le + mod)
-    BUTTON "SET_MODE" "var mod = screen.getNamedWidget('MODE').value; api.cmd('COMMS SET_MODE with SETMODE ' + mod);"
-    
-    LABEL "MODE: 256-258"
-    
-    BUTTON "VERSION" "api.cmd('COMMS VERSION with GETVER 259');"
-  END
+VERTICALBOX "Command list"
+  HORIZONTALLINE
+  NAMED_WIDGET MODE TEXTFIELD 12 "258"
+  BUTTON 'SET_MODE' 'var mod = screen.getNamedWidget("MODE").text();' +
+  'api.cmd("COMMS SET_MODE with SETMODE "+mod+"")'
+  LABEL "MODE: 256-258"
+  
+  BUTTON 'VERSION' 'api.cmd("COMMS VERSION with GETVER 259")'
+END

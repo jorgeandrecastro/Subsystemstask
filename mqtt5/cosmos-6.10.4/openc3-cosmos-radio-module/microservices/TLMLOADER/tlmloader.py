@@ -2,61 +2,53 @@ from openc3.utilities.logger import Logger
 from openc3.api import inject_tlm
 import paho.mqtt.client as mqtt
 import re
+import time
 
-# Utilise ton IP réelle 192.168.1.84
-MQTTBROKER = "192.168.1.84" 
+# Configuration
+MQTT_BROKER = "host.docker.internal" 
+MQTT_PORT = 1883 
 TOPIC = "satelliteSS/#"
 
 def on_message(client, userdata, message):
     try:
         msg = message.payload.decode()
-        
-        # On ne traite que les messages venant de la Radio (ceux qui commencent par CommsSS)
         if "CommsSS" in msg:
-            Logger.info(f"REAL TELEMETRY RECEIVED: {msg}")
+            Logger.info(f"MQTT reçu : {msg}")
             
-            # INITIALISATION DES DONNÉES
-            tlm_data = {
-                "INACTBEA": msg,  # Le message complet affiché dans la zone de texte
-                "MODE": 0,         # Valeur par défaut
-                "FW_VER": 0        # Valeur par défaut
-            }
+            # 1. Cas du message Firmware Version -> Paquet VERSION
+            if "Firmware Version" in msg:
+                # On injecte dans le paquet VERSION, item FW_VER
+                inject_tlm("COMMS", "VERSION", {"FW_VER": msg})
+                Logger.info(f"Injecté dans VERSION: {msg}")
 
-            # EXTRACTION DU FIRMWARE (ex: "Firmware: 1.01" -> 101)
-            # On cherche un nombre après le mot "Firmware:"
-            fw_match = re.search(r"Firmware:\s*([\d.]+)", msg)
-            if fw_match:
-                # On multiplie par 100 pour transformer 1.01 en entier 101 (UINT dans tlm.txt)
-                tlm_data["FW_VER"] = int(float(fw_match.group(1)) * 100)
+            # 2. Cas du message setMode -> Paquet SET_MODE
+            elif "setMode" in msg:
+                # On injecte dans le paquet SET_MODE, item MODE
+                inject_tlm("COMMS", "SET_MODE", {"MODE": msg})
+                Logger.info(f"Injecté dans SET_MODE: {msg}")
 
-            # DETECTION DU MODE (Optionnel selon ce que ta radio renvoie)
-            if "Active" in msg or "MODE 1" in msg:
-                tlm_data["MODE"] = 1
+            # 3. Tout le reste (Beacons, etc.) -> Paquet BEACON
             else:
-                tlm_data["MODE"] = 0
-
-            # INJECTION DANS COSMOS
-            # Cible: COMMS, Paquet: STATUS
-            inject_tlm("COMMS", "STATUS", tlm_data)
-            Logger.info(f"Successfully injected: {tlm_data}")
+                # On injecte dans le paquet BEACON, item INACTBEA
+                inject_tlm("COMMS", "BEACON", {"INACTBEA": msg})
+                Logger.info(f"Injecté dans BEACON: {msg}")
 
     except Exception as e:
-        Logger.error(f"Error processing telemetry: {e}")
+        Logger.error(f"Erreur de processing : {e}")
 
 def main():
-    # Configuration du client MQTT
-    client = mqtt.Client()
+    client = mqtt.Client(callback_api_version=mqtt.CallbackAPIVersion.VERSION2)
     client.on_message = on_message
     
-    try:
-        Logger.info(f"Connecting to MQTT Broker at {MQTTBROKER}...")
-        client.connect(MQTTBROKER, 1883, 60)
-        client.subscribe(TOPIC)
-        
-        Logger.info(f"TLMLoader is running. Subscribed to {TOPIC}")
-        client.loop_forever()
-    except Exception as e:
-        Logger.error(f"Failed to connect to Broker: {e}")
+    while True:
+        try:
+            Logger.info(f"Connexion MQTT sur {MQTT_BROKER}...")
+            client.connect(MQTT_BROKER, MQTT_PORT, 60)
+            client.subscribe(TOPIC)
+            client.loop_forever()
+        except Exception as e:
+            Logger.error(f"Échec connexion : {e}. Retrying in 5s...")
+            time.sleep(5)
 
 if __name__ == "__main__":
     main()

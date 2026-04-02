@@ -27869,3 +27869,20 @@
 1773779359: Sending PINGRESP to auto-16C18359-94FA-96BA-154C-DC1444B68E5C
 1773779360: Received PINGREQ from auto-65DD901A-0345-5760-BD37-89E9963E5751
 1773779360: Sending PINGRESP to auto-65DD901A-0345-5760-BD37-89E9963E5751
+1774018152: mosquitto version 2.0.15 starting
+1774018152: Config loaded from /mosquitto/config/mosquitto.conf.
+1774018152: Opening ipv4 listen socket on port 1883.
+1774018152: Opening ipv6 listen socket on port 1883.
+1774018152: Opening ipv4 listen socket on port 9001.
+1774018152: Opening ipv6 listen socket on port 9001.
+1774018152: mosquitto version 2.0.15 running
+1774018165: New connection from 172.18.0.1:45072 on port 1883.
+1774018165: New client connected from 172.18.0.1:45072 as auto-B59EEE9B-07D4-0857-2979-B4FDD9705F35 (p2, c1, k60).
+1774018165: No will message specified.
+1774018165: Sending CONNACK to auto-B59EEE9B-07D4-0857-2979-B4FDD9705F35 (0, 0)
+1774018165: Received SUBSCRIBE from auto-B59EEE9B-07D4-0857-2979-B4FDD9705F35
+1774018165: 	satelliteSS/obc (QoS 0)
+1774018165: auto-B59EEE9B-07D4-0857-2979-B4FDD9705F35 0 satelliteSS/obc
+1774018165: Sending SUBACK to auto-B59EEE9B-07D4-0857-2979-B4FDD9705F35
+1774018202: mosquitto version 2.0.15 terminating
+1774018202: Saving in-memory database to /mosquitto/data//mosquitto.db.

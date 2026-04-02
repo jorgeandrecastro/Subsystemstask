@@ -1,15 +1,29 @@
-TARGET COMMS COMMS
+# Set VARIABLEs here to allow variation in your plugin
 
-INTERFACE COMMS_INT udp_interface.rb 192.168.1.84 8080 8081 8082 nil
-  MAP_CMD_TARGET COMMS
-  MAP_TLM_TARGET COMMS
+VARIABLE comms_target_name COMMS
+#VARIABLE comms_wrt_dest_prt 8080
 
-MICROSERVICE TLMLOADER TLMLOADER-SERVICE
-  CMD python tlmloader.py
-  TARGET_NAME COMMS
-  WORK_DIR .
-VARIABLE obc_target_name OBC
+#TARGET COMMS <%= comms_target_name %>
+#INTERFACE <%= comms_target_name %>_INT openc3/interfaces/tcpip_client_interface.py host.docker.internal 8080 8081 10.0 None BURST
+#INTERFACE <%= comms_target_name %>_INT openc3/interfaces/udp_interface.py host.docker.internal 8080 8081 8082 None 
+ # MAP_CMD_TARGET <%= comms_target_name %>
+  
+VARIABLE comms_target_name COMMS
+VARIABLE comms_wrt_dest_prt 8080
+VARIABLE comms_read_prt 8081
+VARIABLE comms_wrt_src_prt 8082
 
-TARGET OBC <%= obc_target_name %>
-INTERFACE <%= obc_target_name %>_INT openc3/interfaces/tcpip_client_interface.py host.docker.internal 8080 8081 10.0 None BURST
-  MAP_TARGET <%= obc_target_name %>
+TARGET COMMS <%= comms_target_name %>
+
+INTERFACE <%= comms_target_name %>_INT udp_interface.rb localhost <%= comms_wrt_dest_prt %> nil <%= comms_wrt_src_prt %> nil
+   MAP_CMD_TARGET <%= comms_target_name %>
+  
+MICROSERVICE PACKETHANDLER packethandler-microservice
+  CMD python3 packethandler.py
+  TARGET_NAME <%= comms_target_name %>
+  PORT <%= comms_wrt_dest_prt %> UDP
+
+MICROSERVICE TLMLOADER tlmloader-microservice
+  CMD python3 tlmloader.py
+
+
