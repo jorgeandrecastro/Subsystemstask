@@ -5,8 +5,8 @@ PROJECT EXPORT FOR LLMs
 PROJECT INFORMATION:
 --------------------------------------------------
 Project Name: satelliteSS
-Generated On: 2026-04-02 19:55:01 (Europe/Paris / GMT+02:00)
-Total Files Processed: 93
+Generated On: 2026-04-05 21:57:31 (Europe/Paris / GMT+02:00)
+Total Files Processed: 115
 Export Tool: Easy Whole Project to Single Text File for LLMs v1.1.0
 Tool Author: Jota / José Guilherme Pandolfi
 
@@ -30,34 +30,66 @@ PROJECT STRUCTURE
 │   │   └── 📄 mosquitto.conf (323 B)
 │   ├── 📁 cosmos-6.10.4/
 │   │   ├── 📁 openc3-cosmos-obc-module/
+│   │   │   ├── 📁 gem_debug2/
+│   │   │   │   └── 📁 openc3-cosmos-obc-module-0.0.0.20260405225619/
+│   │   │   │       ├── 📁 microservices/
+│   │   │   │       │   ├── 📁 PACKETHANDLER/
+│   │   │   │       │   │   └── 📄 packethandler.py (1.16 KB)
+│   │   │   │       │   └── 📁 TLMLOADER/
+│   │   │   │       │       └── 📄 tlmloader.py (1.73 KB)
+│   │   │   │       ├── 📁 photosTest/
+│   │   │   │       │   └── 📄 OBcApp.png (44.87 KB)
+│   │   │   │       ├── 📁 targets/
+│   │   │   │       │   └── 📁 OBC/
+│   │   │   │       │       ├── 📁 cmd_tlm/
+│   │   │   │       │       │   ├── 📄 cmd.txt (512 B)
+│   │   │   │       │       │   └── 📄 tlm.txt (417 B)
+│   │   │   │       │       ├── 📁 lib/
+│   │   │   │       │       │   └── 📄 obc.py (249 B)
+│   │   │   │       │       ├── 📁 procedures/
+│   │   │   │       │       │   └── 📄 procedure.py (91 B)
+│   │   │   │       │       ├── 📁 public/
+│   │   │   │       │       │   └── 📄 README.txt (124 B)
+│   │   │   │       │       ├── 📁 screens/
+│   │   │   │       │       │   └── 📄 obc.txt (443 B)
+│   │   │   │       │       └── 📄 target.txt (96 B)
+│   │   │   │       ├── 📄 LICENSE.txt (1.03 KB)
+│   │   │   │       ├── 📄 plugin.txt (539 B)
+│   │   │   │       ├── 📄 Rakefile (1.44 KB)
+│   │   │   │       ├── 📄 README.md (1.8 KB)
+│   │   │   │       ├── 📄 Readmeobc.md (4.1 KB)
+│   │   │   │       └── 📄 requirements.txt (22 B)
 │   │   │   ├── 📁 microservices/
 │   │   │   │   ├── 📁 PACKETHANDLER/
-│   │   │   │   │   └── 📄 packethandler.py (2.33 KB)
+│   │   │   │   │   └── 📄 packethandler.py (1.16 KB)
 │   │   │   │   └── 📁 TLMLOADER/
-│   │   │   │       └── 📄 tlmloader.py (2.6 KB)
+│   │   │   │       └── 📄 tlmloader.py (1.73 KB)
 │   │   │   ├── 📁 photosTest/
-│   │   │   │   ├── 📄 Capture d'écran 2026-03-17 210423.png (172.72 KB)
-│   │   │   │   ├── 📄 Capture d'écran 2026-03-17 210752.png (243.25 KB)
-│   │   │   │   ├── 📄 Capture d'écran 2026-03-17 210928.png (335.41 KB)
-│   │   │   │   └── 📄 Capture d'écran 2026-03-17 211055.png (461.28 KB)
+│   │   │   │   └── 📄 OBcApp.png (44.87 KB)
 │   │   │   ├── 📁 targets/
 │   │   │   │   └── 📁 OBC/
 │   │   │   │       ├── 📁 cmd_tlm/
-│   │   │   │       │   ├── 📄 cmd.txt (680 B)
-│   │   │   │       │   └── 📄 tlm.txt (653 B)
+│   │   │   │       │   ├── 📄 cmd.txt (512 B)
+│   │   │   │       │   └── 📄 tlm.txt (417 B)
 │   │   │   │       ├── 📁 lib/
 │   │   │   │       │   └── 📄 obc.py (249 B)
+│   │   │   │       ├── 📁 microservices/
+│   │   │   │       │   ├── 📁 PACKETHANDLER/
+│   │   │   │       │   │   └── 📄 packethandler.py (1.16 KB)
+│   │   │   │       │   └── 📁 TLMLOADER/
+│   │   │   │       │       └── 📄 tlmloader.py (1.73 KB)
 │   │   │   │       ├── 📁 procedures/
 │   │   │   │       │   └── 📄 procedure.py (91 B)
 │   │   │   │       ├── 📁 public/
 │   │   │   │       │   └── 📄 README.txt (124 B)
 │   │   │   │       ├── 📁 screens/
-│   │   │   │       │   └── 📄 status.txt (127 B)
+│   │   │   │       │   └── 📄 obc.txt (443 B)
 │   │   │   │       └── 📄 target.txt (96 B)
+│   │   │   ├── 📄 Commandes.md (538 B)
 │   │   │   ├── 📄 LICENSE.txt (1.03 KB)
-│   │   │   ├── 📄 openc3-cosmos-obc-module-1.0.0.gem (9.5 KB)
-│   │   │   ├── 📄 openc3-cosmos-obc-module.gemspec (921 B)
-│   │   │   ├── 📄 plugin.txt (334 B)
+│   │   │   ├── 📄 openc3-cosmos-obc-module-0.0.0.20260405234459.gem (9 KB)
+│   │   │   ├── 📄 openc3-cosmos-obc-module.gemspec (825 B)
+│   │   │   ├── 📄 plugin.txt (494 B)
 │   │   │   ├── 📄 Rakefile (1.44 KB)
 │   │   │   ├── 📄 README.md (1.8 KB)
 │   │   │   ├── 📄 Readmeobc.md (4.1 KB)
@@ -70,6 +102,8 @@ PROJECT STRUCTURE
 │   │   │   │       └── 📄 tlmloader.py (1.82 KB)
 │   │   │   ├── 📁 Photos test/
 │   │   │   │   ├── 📄 commande0101.png (238.55 KB)
+│   │   │   │   ├── 📄 Portradioandtime.png (214.57 KB)
+│   │   │   │   ├── 📄 porttimeradio.png (157.62 KB)
 │   │   │   │   ├── 📄 radio0100.png (91.62 KB)
 │   │   │   │   ├── 📄 radio0101.png (76.18 KB)
 │   │   │   │   ├── 📄 radio0102.png (99.49 KB)
@@ -79,14 +113,17 @@ PROJECT STRUCTURE
 │   │   │   │   ├── 📄 test0100.png (247.26 KB)
 │   │   │   │   ├── 📄 test0101.png (277.91 KB)
 │   │   │   │   ├── 📄 test0102.png (257.45 KB)
-│   │   │   │   ├── 📄 test0103.png (230.23 KB)
-│   │   │   │   └── 📄 test0103sub.png (214.57 KB)
+│   │   │   │   └── 📄 test0103.png (230.23 KB)
 │   │   │   ├── 📁 PhotosTestmosquittoCosmo/
-│   │   │   │   ├── 📄 Capture d'écran 2026-03-17 202038.png (307.82 KB)
-│   │   │   │   ├── 📄 Capture d'écran 2026-03-17 202252.png (341.08 KB)
-│   │   │   │   ├── 📄 Capture d'écran 2026-03-17 202321.png (354.2 KB)
-│   │   │   │   ├── 📄 Capture d'écran 2026-03-17 202350.png (514.47 KB)
-│   │   │   │   └── 📄 Readme.md (6.37 KB)
+│   │   │   │   ├── 📄 Comsend1.png (376.61 KB)
+│   │   │   │   ├── 📄 Comsend2.png (437.36 KB)
+│   │   │   │   ├── 📄 Conected.png (381.68 KB)
+│   │   │   │   ├── 📄 graph.png (343.94 KB)
+│   │   │   │   ├── 📄 Install.png (366.54 KB)
+│   │   │   │   ├── 📄 MicroservicesActivation.png (370.4 KB)
+│   │   │   │   ├── 📄 Porttime5se.png (45.05 KB)
+│   │   │   │   ├── 📄 Readme.md (6.37 KB)
+│   │   │   │   └── 📄 Telemetry.png (301.37 KB)
 │   │   │   ├── 📁 targets/
 │   │   │   │   └── 📁 COMMS/
 │   │   │   │       ├── 📁 cmd_tlm/
@@ -104,11 +141,12 @@ PROJECT STRUCTURE
 │   │   │   │       │   └── 📄 telemetry.txt (280 B)
 │   │   │   │       └── 📄 target.txt (98 B)
 │   │   │   ├── 📄 LICENSE.txt (1.03 KB)
-│   │   │   ├── 📄 openc3-cosmos-radio-module-1.0.9.gem (9.5 KB)
+│   │   │   ├── 📄 openc3-cosmos-radio-module-1.0.9.gem (9 KB)
+│   │   │   ├── 📄 openc3-cosmos-radio-module-2.1.0.gem (9.5 KB)
 │   │   │   ├── 📄 openc3-cosmos-radio-module.gemspec (1.06 KB)
-│   │   │   ├── 📄 plugin.txt (1.01 KB)
+│   │   │   ├── 📄 plugin.txt (1.03 KB)
 │   │   │   ├── 📄 Rakefile (1.44 KB)
-│   │   │   ├── 📄 README.md (1.8 KB)
+│   │   │   ├── 📄 README.md (2.13 KB)
 │   │   │   └── 📄 requirements.txt (32 B)
 │   │   ├── 📁 openc3-redis/
 │   │   │   └── 📄 users.acl (610 B)
@@ -119,9 +157,9 @@ PROJECT STRUCTURE
 │   │   │   └── 📄 traefik.yaml (5.18 KB)
 │   │   ├── 📁 plugins/
 │   │   │   ├── 📁 DEFAULT/
-│   │   │   │   ├── 📁 openc3-cosmos-radio-module/
-│   │   │   │   │   ├── 📄 openc3-cosmos-radio-module-1.0.9.gem (9.5 KB)
-│   │   │   │   │   └── 📄 plugin_instance.json (1.88 KB)
+│   │   │   │   ├── 📁 openc3-cosmos-obc-module/
+│   │   │   │   │   ├── 📄 openc3-cosmos-obc-module-0.0.0.20260405234459.gem (9 KB)
+│   │   │   │   │   └── 📄 plugin_instance.json (1.15 KB)
 │   │   │   │   ├── 📁 targets_modified/
 │   │   │   │   └── 📄 README.md (1.04 KB)
 │   │   │   └── 📄 README.md (1.04 KB)
@@ -161,22 +199,22 @@ PROJECT STRUCTURE
 ================================================================================
 PROJECT STATISTICS
 ================================================================================
-Total Files: 93
-Total Directories: 42
-Text Files: 59
-Binary Files: 34
-Total Size: 33.29 MB
+Total Files: 115
+Total Directories: 58
+Text Files: 76
+Binary Files: 39
+Total Size: 33.45 MB
 
 FILE TYPES DISTRIBUTION:
 ------------------------------
-.png            : 20
-.txt            : 19
-.py             : 15
-.md             : 9
+.txt            : 27
+.png            : 23
+.py             : 21
+.md             : 12
 .yaml           : 5
+no extension    : 4
+.gem            : 4
 .sh             : 4
-.gem            : 3
-no extension    : 3
 .bat            : 3
 .exe            : 3
 .gemspec        : 2
@@ -329,20 +367,20 @@ persistence_location /mosquitto/data/
 
 
 ================================================================================
-FILE: mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module/microservices/PACKETHANDLER/packethandler.py
+FILE: mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module/gem_debug2/openc3-cosmos-obc-module-0.0.0.20260405225619/microservices/PACKETHANDLER/packethandler.py
 ================================================================================
 
 FILE INFORMATION:
 ----------------------------------------
-Size: 2.33 KB
+Size: 1.16 KB
 Extension: .py
 Language: python
-Location: mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module/microservices/PACKETHANDLER/packethandler.py
-Relative Path: mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module/microservices/PACKETHANDLER
-Created: 2026-03-17 19:52:14 (Europe/Paris / GMT+01:00)
-Modified: 2026-03-17 20:01:30 (Europe/Paris / GMT+01:00)
-MD5: b5bc9f077b282e36f7e6f825a24214db
-SHA256: 81d8018152cf0c30a6af1348a4197b72c962ab4ef685dccc08d2b0da61972def
+Location: mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module/gem_debug2/openc3-cosmos-obc-module-0.0.0.20260405225619/microservices/PACKETHANDLER/packethandler.py
+Relative Path: mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module/gem_debug2/openc3-cosmos-obc-module-0.0.0.20260405225619/microservices/PACKETHANDLER
+Created: 2026-04-05 20:57:32 (Europe/Paris / GMT+02:00)
+Modified: 2026-04-05 20:57:32 (Europe/Paris / GMT+02:00)
+MD5: 8458491806cd08f4e2cdb9f7722060ed
+SHA256: 7d499e4935c7b31ee9a920bf7d66a5cb1ff5c7c6e234ed6f0b91bb5ed439fcc9
 Encoding: UTF-8
 
 FILE CONTENT:
@@ -352,174 +390,108 @@ import sys
 import socket
 import struct
 import logging
+import paho.mqtt.publish as publish
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
-try:
-    import paho.mqtt.client as mqtt
-    import paho.mqtt.publish as publish
-except ImportError:
-    import subprocess
-    subprocess.check_call([sys.executable, "-m", "pip", "install", "paho-mqtt==1.6.1"])
-    import paho.mqtt.client as mqtt
-    import paho.mqtt.publish as publish
-
-# Configuration OBC (ports différents de COMMS)
-port = 8090  # DIFFERENT de 8080 (COMMS)
+# CHANGEMENT ICI : Port 8090 pour l'OBC
+UDP_PORT = 8090 
 host = "0.0.0.0"
-Topic = "satelliteSS/obc"  # DIFFERENT de satelliteSS/radio
-MQTTBROKER = "192.168.1.84"
-
-# Commandes OBC uniquement (Table 2)
-CMD_MAP = {
-    0x0200: "OBC_SET_DESIGNATOR_0",
-    0x0201: "OBC_SET_DESIGNATOR_1",
-    0x0202: "OBC_SET_DESIGNATOR_2",
-    0x0203: "OBC_SET_DESIGNATOR_3",
-    0x0204: "OBC_SET_HK_PERIOD_516",
-    0x0205: "OBC_SET_HK_PERIOD_517",
-    0x0206: "OBC_SET_HK_PERIOD_518",
-    0x0207: "OBC_SET_HK_PERIOD_519",
-    0x0208: "OBC_SET_HK_PERIOD_520",
-    0x0209: "OBC_SET_HK_PERIOD_521",
-    0x020A: "OBC_SET_HK_PERIOD_522",
-    0x020B: "OBC_SET_HK_PERIOD_523",
-    0x020C: "OBC_SET_HK_PERIOD_524",
-    0x020D: "OBC_SET_HK_PERIOD_525",
-    0x020E: "OBC_SET_HK_PERIOD_526",
-    0x020F: "OBC_GET_VERSION",
-    0x0210: "OBC_GET_IMAGE",
-    0x0211: "OBC_GET_UPTIME",
-}
+MQTT_BROKER = "host.docker.internal"
+MQTT_PORT = 1883
+Topic = "satelliteSS/obc" # Topic spécifique OBC
 
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-sock.bind((host, port))
-logger.info(f"OBC PacketHandler listening on {host}:{port}")
+sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+
+try:
+    sock.bind((host, UDP_PORT))
+    logger.info(f"OBC PacketHandler listening on UDP {UDP_PORT}")
+except Exception as e:
+    logger.error(f"Could not bind OBC: {e}")
+    sys.exit(1)
 
 while True:
     try:
-        sock.settimeout(10)
         data, addr = sock.recvfrom(1024)
-        
         if data:
-            logger.info(f"OBC Received: {data.hex()} from {addr}")
-            
-            if len(data) >= 2:
-                cmd = struct.unpack(">H", data[:2])[0]
-                logger.info(f"OBC Command ID: {cmd} ({hex(cmd)})")
-
-                if cmd in CMD_MAP:
-                    cmd_name = CMD_MAP[cmd]
-                    logger.info(f"OBC VALID: {cmd_name} -> MQTT")
-                    publish.single(Topic, payload=str(cmd), hostname=MQTTBROKER)
-                else:
-                    logger.warning(f"OBC Invalid: {hex(cmd)}")
-
-    except socket.timeout:
-        pass
-    except Exception as err:
-        logger.error(f"OBC Error: {err}")
-        time.sleep(1)
+            # On récupère l'ID de la commande (ex: 512 pour Set Designator)
+            cmd_id = struct.unpack(">H", data[:2])[0]
+            publish.single(Topic, payload=str(cmd_id), hostname=MQTT_BROKER, port=MQTT_PORT)
+            logger.info(f"OBC Published CMD {cmd_id} to MQTT")
+    except Exception as e:
+        logger.error(f"OBC Loop error: {e}")
 ================================================================================
 
 
 ================================================================================
-FILE: mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module/microservices/TLMLOADER/tlmloader.py
+FILE: mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module/gem_debug2/openc3-cosmos-obc-module-0.0.0.20260405225619/microservices/TLMLOADER/tlmloader.py
 ================================================================================
 
 FILE INFORMATION:
 ----------------------------------------
-Size: 2.6 KB
+Size: 1.73 KB
 Extension: .py
 Language: python
-Location: mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module/microservices/TLMLOADER/tlmloader.py
-Relative Path: mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module/microservices/TLMLOADER
-Created: 2026-03-17 19:52:56 (Europe/Paris / GMT+01:00)
-Modified: 2026-03-17 20:02:30 (Europe/Paris / GMT+01:00)
-MD5: 603ddd0edee35a0d0480f5df0660e6ee
-SHA256: 0ab1070ff7c4e4f91fd347b1e80f6904684d41923ba4ecfdaa273be53856be10
-Encoding: ASCII
+Location: mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module/gem_debug2/openc3-cosmos-obc-module-0.0.0.20260405225619/microservices/TLMLOADER/tlmloader.py
+Relative Path: mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module/gem_debug2/openc3-cosmos-obc-module-0.0.0.20260405225619/microservices/TLMLOADER
+Created: 2026-04-05 20:57:32 (Europe/Paris / GMT+02:00)
+Modified: 2026-04-05 20:57:32 (Europe/Paris / GMT+02:00)
+MD5: cf5749b8317ba71df84dc2c94b9ac6fd
+SHA256: 71c8c13f9cf99bf6ebf02093f91c47b4205770611d817b95f8894169dd3d16f5
+Encoding: UTF-8
 
 FILE CONTENT:
 ----------------------------------------
 from openc3.utilities.logger import Logger
 from openc3.api import inject_tlm
 import paho.mqtt.client as mqtt
-import re
+import time
 
-MQTTBROKER = "192.168.1.84"
-TOPIC = "satelliteSS/obc"  # Topic OBC uniquement
+# Configuration
+MQTT_BROKER = "host.docker.internal" 
+MQTT_PORT = 1883 
+TOPIC = "satelliteSS/#"
 
 def on_message(client, userdata, message):
     try:
         msg = message.payload.decode()
-        
-        # OBC uniquement
+        # On filtre pour ne prendre que les messages de l'OBC
         if "ObcSS" in msg:
-            Logger.info(f"OBC TELEMETRY: {msg}")
+            Logger.info(f"OBC MQTT reçu : {msg}")
             
-            tlm_data = {
-                "HK_MESSAGE": msg,
-                "OBC_ID": 0,
-                "UPTIME": 0,
-                "FW_VERSION": 0,
-                "BOOT_IMAGE": 0,
-                "NEXT_IMAGE": 0,
-                "HK_PERIOD": 0,
-                "TEMP": 0,
-                "VOLTAGE_3V": 0,
-                "VOLTAGE_5V": 0
-            }
-            
-            # Extraction OBC_ID (ObcSS0 -> 0)
-            obc_match = re.search(r"ObcSS(\d)", msg)
-            if obc_match:
-                tlm_data["OBC_ID"] = int(obc_match.group(1))
-            
-            # Extraction Uptime
-            uptime_match = re.search(r"Up:\s*(\d+)", msg)
-            if uptime_match:
-                tlm_data["UPTIME"] = int(uptime_match.group(1))
-            
-            # Extraction Firmware
-            fw_match = re.search(r"Firmware:\s*([\d.]+)", msg)
-            if fw_match:
-                tlm_data["FW_VERSION"] = int(float(fw_match.group(1)) * 100)
-            
-            # Extraction Température
-            temp_match = re.search(r"Temp:\s*([\d.]+)", msg)
-            if temp_match:
-                tlm_data["TEMP"] = int(float(temp_match.group(1)) * 100)
-            
-            # Extraction 3.3V
-            v3_match = re.search(r"3V:\s*([\d.]+)", msg)
-            if v3_match:
-                tlm_data["VOLTAGE_3V"] = int(float(v3_match.group(1)) * 100)
-            
-            # Extraction 5V
-            v5_match = re.search(r"5V:\s*([\d.]+)", msg)
-            if v5_match:
-                tlm_data["VOLTAGE_5V"] = int(float(v5_match.group(1)) * 100)
-            
-            inject_tlm("OBC", "STATUS", tlm_data)
-            Logger.info(f"OBC injected: {tlm_data}")
+            # 1. Firmware -> Paquet GET_VERSION
+            if "Firmware" in msg:
+                inject_tlm("OBC", "GET_VERSION", {"FW_VER": msg})
+                Logger.info(f"Injecté OBC VERSION: {msg}")
+
+            # 2. Uptime / Startup -> Paquet GET_UPTIME
+            elif "Startup" in msg or "Connected" in msg:
+                inject_tlm("OBC", "GET_UPTIME", {"TIME_VAL": msg})
+                Logger.info(f"Injecté OBC UPTIME: {msg}")
+
+            # 3. Le reste (ID value, etc.) -> Paquet SET_DESIGNATOR
+            else:
+                inject_tlm("OBC", "SET_DESIGNATOR", {"DATA": msg})
+                Logger.info(f"Injecté OBC DESIGNATOR: {msg}")
 
     except Exception as e:
-        Logger.error(f"OBC Error: {e}")
+        Logger.error(f"Erreur processing OBC : {e}")
 
 def main():
-    client = mqtt.Client()
+    client = mqtt.Client(callback_api_version=mqtt.CallbackAPIVersion.VERSION2)
     client.on_message = on_message
     
-    try:
-        Logger.info("OBC TLMLoader starting...")
-        client.connect(MQTTBROKER, 1883, 60)
-        client.subscribe(TOPIC)
-        Logger.info(f"OBC TLMLoader subscribed to {TOPIC}")
-        client.loop_forever()
-    except Exception as e:
-        Logger.error(f"OBC Failed: {e}")
+    while True:
+        try:
+            Logger.info(f"Connexion OBC MQTT sur {MQTT_BROKER}...")
+            client.connect(MQTT_BROKER, MQTT_PORT, 60)
+            client.subscribe(TOPIC)
+            client.loop_forever()
+        except Exception as e:
+            Logger.error(f"Échec OBC : {e}. Retrying in 5s...")
+            time.sleep(5)
 
 if __name__ == "__main__":
     main()
@@ -529,10 +501,674 @@ if __name__ == "__main__":
 ================================================================================
 BINARY/EXCLUDED FILES (not included in text content)
 ================================================================================
-- mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module/photosTest/Capture d'écran 2026-03-17 210423.png
-- mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module/photosTest/Capture d'écran 2026-03-17 210752.png
-- mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module/photosTest/Capture d'écran 2026-03-17 210928.png
-- mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module/photosTest/Capture d'écran 2026-03-17 211055.png
+- mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module/gem_debug2/openc3-cosmos-obc-module-0.0.0.20260405225619/photosTest/OBcApp.png
+
+
+================================================================================
+FILE: mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module/gem_debug2/openc3-cosmos-obc-module-0.0.0.20260405225619/targets/OBC/cmd_tlm/cmd.txt
+================================================================================
+
+FILE INFORMATION:
+----------------------------------------
+Size: 512 B
+Extension: .txt
+Language: text
+Location: mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module/gem_debug2/openc3-cosmos-obc-module-0.0.0.20260405225619/targets/OBC/cmd_tlm/cmd.txt
+Relative Path: mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module/gem_debug2/openc3-cosmos-obc-module-0.0.0.20260405225619/targets/OBC/cmd_tlm
+Created: 2026-04-05 20:57:33 (Europe/Paris / GMT+02:00)
+Modified: 2026-04-05 20:57:33 (Europe/Paris / GMT+02:00)
+MD5: 529182eb77325555a3b8c4fd67377a3a
+SHA256: b4f04b2d55bf78082c806d23c3558c01104cf035668bad6cbf6bfc5e5760cf7c
+Encoding: ASCII
+
+FILE CONTENT:
+----------------------------------------
+COMMAND OBC SET_DESIGNATOR BIG_ENDIAN "Set OBC ID"
+  APPEND_ID_PARAMETER ID_VAL 16 INT 512 515 512 "ID value (0x0200-0x0203)"
+
+COMMAND OBC HK_BEACON_PERIOD BIG_ENDIAN "Set Beacon Delay"
+  APPEND_ID_PARAMETER DELAY_VAL 16 INT 516 526 516 "Delay (0x0204-0x020E)"
+
+COMMAND OBC GET_VERSION BIG_ENDIAN "Get Firmware Version"
+  APPEND_ID_PARAMETER CMD_ID 16 INT 527 527 527 "Version (0x020F)"
+
+COMMAND OBC GET_UPTIME BIG_ENDIAN "Get Time Since Startup"
+  APPEND_ID_PARAMETER CMD_ID 16 INT 529 529 529 "Uptime (0x0211)"
+================================================================================
+
+
+================================================================================
+FILE: mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module/gem_debug2/openc3-cosmos-obc-module-0.0.0.20260405225619/targets/OBC/cmd_tlm/tlm.txt
+================================================================================
+
+FILE INFORMATION:
+----------------------------------------
+Size: 417 B
+Extension: .txt
+Language: text
+Location: mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module/gem_debug2/openc3-cosmos-obc-module-0.0.0.20260405225619/targets/OBC/cmd_tlm/tlm.txt
+Relative Path: mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module/gem_debug2/openc3-cosmos-obc-module-0.0.0.20260405225619/targets/OBC/cmd_tlm
+Created: 2026-04-05 20:57:33 (Europe/Paris / GMT+02:00)
+Modified: 2026-04-05 20:57:33 (Europe/Paris / GMT+02:00)
+MD5: fa7410a11a1584efaa35c2e0d06f2dc3
+SHA256: 8d10b3149fb45df30490cf1c6d38428200f47d8484d459ad1d53b39ed7b36869
+Encoding: ASCII
+
+FILE CONTENT:
+----------------------------------------
+TELEMETRY OBC SET_DESIGNATOR BIG_ENDIAN "OBC ID Status"
+  APPEND_ITEM DATA 1024 STRING "ID value"
+
+TELEMETRY OBC HK_BEACON_PERIOD BIG_ENDIAN "Beacon Period Status"
+  APPEND_ITEM DATA 1024 STRING "Delay value"
+
+TELEMETRY OBC GET_VERSION BIG_ENDIAN "Firmware Version"
+  APPEND_ITEM FW_VER 1024 STRING "Version"
+
+TELEMETRY OBC GET_UPTIME BIG_ENDIAN "System Uptime"
+  APPEND_ITEM TIME_VAL 1024 STRING "Time since startup"
+================================================================================
+
+
+================================================================================
+FILE: mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module/gem_debug2/openc3-cosmos-obc-module-0.0.0.20260405225619/targets/OBC/lib/obc.py
+================================================================================
+
+FILE INFORMATION:
+----------------------------------------
+Size: 249 B
+Extension: .py
+Language: python
+Location: mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module/gem_debug2/openc3-cosmos-obc-module-0.0.0.20260405225619/targets/OBC/lib/obc.py
+Relative Path: mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module/gem_debug2/openc3-cosmos-obc-module-0.0.0.20260405225619/targets/OBC/lib
+Created: 2026-04-05 20:57:33 (Europe/Paris / GMT+02:00)
+Modified: 2026-04-05 20:57:33 (Europe/Paris / GMT+02:00)
+MD5: fa8af251d1478e674d25da17aa3c132c
+SHA256: bd8265e52d01322b3b20098e7459d008a03e4b4be890504197ac93185e80ddff
+Encoding: ASCII
+
+FILE CONTENT:
+----------------------------------------
+# This class can be used in your scripts like so:
+#   load_utility 'OBC/lib/obc.py'
+#   obc = Obc()
+#   obc.utility()
+# For more information see the OpenC3 scripting guide
+
+from openc3.script import *
+
+class Obc:
+    def utility(self):
+        pass
+
+================================================================================
+
+
+================================================================================
+FILE: mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module/gem_debug2/openc3-cosmos-obc-module-0.0.0.20260405225619/targets/OBC/procedures/procedure.py
+================================================================================
+
+FILE INFORMATION:
+----------------------------------------
+Size: 91 B
+Extension: .py
+Language: python
+Location: mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module/gem_debug2/openc3-cosmos-obc-module-0.0.0.20260405225619/targets/OBC/procedures/procedure.py
+Relative Path: mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module/gem_debug2/openc3-cosmos-obc-module-0.0.0.20260405225619/targets/OBC/procedures
+Created: 2026-04-05 20:57:33 (Europe/Paris / GMT+02:00)
+Modified: 2026-04-05 20:57:33 (Europe/Paris / GMT+02:00)
+MD5: f0fed5983c7504935c5fadfde9e303a1
+SHA256: 2f465eca4d85d6479aa90b5ed413d888468b01b89d03938d9ea1d80ead2b6e8c
+Encoding: ASCII
+
+FILE CONTENT:
+----------------------------------------
+# Script Runner test script
+cmd("OBC EXAMPLE")
+wait_check("OBC STATUS BOOL == 'FALSE'", 5)
+
+================================================================================
+
+
+================================================================================
+FILE: mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module/gem_debug2/openc3-cosmos-obc-module-0.0.0.20260405225619/targets/OBC/public/README.txt
+================================================================================
+
+FILE INFORMATION:
+----------------------------------------
+Size: 124 B
+Extension: .txt
+Language: text
+Location: mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module/gem_debug2/openc3-cosmos-obc-module-0.0.0.20260405225619/targets/OBC/public/README.txt
+Relative Path: mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module/gem_debug2/openc3-cosmos-obc-module-0.0.0.20260405225619/targets/OBC/public
+Created: 2026-04-05 20:57:34 (Europe/Paris / GMT+02:00)
+Modified: 2026-04-05 20:57:34 (Europe/Paris / GMT+02:00)
+MD5: 5a71558b0f037eef511745d1e11ecc1b
+SHA256: 1a665aaa585a596bffc44bc9482fddab4adcd6c51401bc84ae0cc10a7ead27e7
+Encoding: ASCII
+
+FILE CONTENT:
+----------------------------------------
+Put image files in this directory for use in Telemetry Viewer Canvas Image widgets such as CANVASIMAGE and CANVASIMAGEVALUE.
+================================================================================
+
+
+================================================================================
+FILE: mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module/gem_debug2/openc3-cosmos-obc-module-0.0.0.20260405225619/targets/OBC/screens/obc.txt
+================================================================================
+
+FILE INFORMATION:
+----------------------------------------
+Size: 443 B
+Extension: .txt
+Language: text
+Location: mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module/gem_debug2/openc3-cosmos-obc-module-0.0.0.20260405225619/targets/OBC/screens/obc.txt
+Relative Path: mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module/gem_debug2/openc3-cosmos-obc-module-0.0.0.20260405225619/targets/OBC/screens
+Created: 2026-04-05 20:57:34 (Europe/Paris / GMT+02:00)
+Modified: 2026-04-05 20:57:34 (Europe/Paris / GMT+02:00)
+MD5: de5ebb93238dae2b5b2dae6dcc35dd6c
+SHA256: 9565e3f94d3349480eb996e3adfc950c191cb1e1d57e13a2b523177ab8c4a763
+Encoding: ASCII
+
+FILE CONTENT:
+----------------------------------------
+VERTICALBOX "OBC Commands"
+  HORIZONTALLINE
+  NAMED_WIDGET ID_IN TEXTFIELD 12 "512"
+  BUTTON 'SET ID' 'var val = screen.getNamedWidget("ID_IN").text(); api.cmd("OBC SET_DESIGNATOR with ID_VAL "+val)'
+  
+  BUTTON 'GET VERSION' 'api.cmd("OBC GET_VERSION")'
+END
+
+VERTICALBOX "OBC Telemetry"
+  LABELVALUE OBC SET_DESIGNATOR DATA CONVERTED 112
+  LABELVALUE OBC GET_VERSION FW_VER CONVERTED 112
+  LABELVALUE OBC GET_UPTIME TIME_VAL CONVERTED 112
+END
+================================================================================
+
+
+================================================================================
+FILE: mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module/gem_debug2/openc3-cosmos-obc-module-0.0.0.20260405225619/targets/OBC/target.txt
+================================================================================
+
+FILE INFORMATION:
+----------------------------------------
+Size: 96 B
+Extension: .txt
+Language: text
+Location: mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module/gem_debug2/openc3-cosmos-obc-module-0.0.0.20260405225619/targets/OBC/target.txt
+Relative Path: mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module/gem_debug2/openc3-cosmos-obc-module-0.0.0.20260405225619/targets/OBC
+Created: 2026-04-05 20:57:34 (Europe/Paris / GMT+02:00)
+Modified: 2026-04-05 20:57:34 (Europe/Paris / GMT+02:00)
+MD5: 8966aa3e4233b199cc3142aae26c3634
+SHA256: ac51b6f857d18644608b18e869582a85795473cfeb16ff82f8a43e6f9f2a9a72
+Encoding: ASCII
+
+FILE CONTENT:
+----------------------------------------
+LANGUAGE python
+
+# Ignored Parameters
+IGNORE_PARAMETER PKTID
+
+# Ignored Items
+IGNORE_ITEM PKTID
+
+================================================================================
+
+
+================================================================================
+FILE: mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module/gem_debug2/openc3-cosmos-obc-module-0.0.0.20260405225619/LICENSE.txt
+================================================================================
+
+FILE INFORMATION:
+----------------------------------------
+Size: 1.03 KB
+Extension: .txt
+Language: text
+Location: mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module/gem_debug2/openc3-cosmos-obc-module-0.0.0.20260405225619/LICENSE.txt
+Relative Path: mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module/gem_debug2/openc3-cosmos-obc-module-0.0.0.20260405225619
+Created: 2026-04-05 20:57:32 (Europe/Paris / GMT+02:00)
+Modified: 2026-04-05 20:57:32 (Europe/Paris / GMT+02:00)
+MD5: c6261915509ec359cb8da76fa07366c9
+SHA256: d9a1dc3ff8084a9e3a92acb761d323c3bac20f018bfa149704b35200383fc267
+Encoding: ASCII
+
+FILE CONTENT:
+----------------------------------------
+Copyright 2023 <COPYRIGHT HOLDER>
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+================================================================================
+
+
+================================================================================
+FILE: mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module/gem_debug2/openc3-cosmos-obc-module-0.0.0.20260405225619/plugin.txt
+================================================================================
+
+FILE INFORMATION:
+----------------------------------------
+Size: 539 B
+Extension: .txt
+Language: text
+Location: mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module/gem_debug2/openc3-cosmos-obc-module-0.0.0.20260405225619/plugin.txt
+Relative Path: mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module/gem_debug2/openc3-cosmos-obc-module-0.0.0.20260405225619
+Created: 2026-04-05 20:57:33 (Europe/Paris / GMT+02:00)
+Modified: 2026-04-05 20:57:33 (Europe/Paris / GMT+02:00)
+MD5: dbc7fbc95ba76eff3e3cc21d5cc0b554
+SHA256: bbff8b6f8d591ea26ffa5f031a6be58860150ad0c299e16997eb5cb4da122bd1
+Encoding: ASCII
+
+FILE CONTENT:
+----------------------------------------
+VARIABLE obc_target_name OBC
+VARIABLE obc_udp_port 8090
+
+TARGET OBC <%= obc_target_name %>
+
+INTERFACE <%= obc_target_name %>_INT udp_interface.rb localhost <%= obc_udp_port %> nil 8092 nil
+  MAP_CMD_TARGET <%= obc_target_name %>
+  MAP_TLM_TARGET <%= obc_target_name %>
+
+MICROSERVICE PACKETHANDLER packethandler-microservice
+  CMD python3 packethandler.py
+  WORK_DIR microservices/PACKETHANDLER
+  TARGET_NAME <%= obc_target_name %>
+
+MICROSERVICE TLMLOADER tlmloader-microservice
+  CMD python3 tlmloader.py
+  WORK_DIR microservices/TLMLOADER
+================================================================================
+
+
+================================================================================
+FILE: mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module/gem_debug2/openc3-cosmos-obc-module-0.0.0.20260405225619/README.md
+================================================================================
+
+FILE INFORMATION:
+----------------------------------------
+Size: 1.8 KB
+Extension: .md
+Language: text
+Location: mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module/gem_debug2/openc3-cosmos-obc-module-0.0.0.20260405225619/README.md
+Relative Path: mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module/gem_debug2/openc3-cosmos-obc-module-0.0.0.20260405225619
+Created: 2026-04-05 20:57:32 (Europe/Paris / GMT+02:00)
+Modified: 2026-04-05 20:57:32 (Europe/Paris / GMT+02:00)
+MD5: 75a0770f6d1d14189824fc1734d72e77
+SHA256: aa33c25e0d9f6261c7977f7431e5389f9dd3eaa7e4a80405edcc953855cb253e
+Encoding: UTF-8
+
+FILE CONTENT:
+----------------------------------------
+# OpenC3 COSMOS Plugin
+
+See the [OpenC3](https://openc3.com) documentation for all things OpenC3.
+
+Update this comment with your own description.
+
+## Getting Started
+
+1. Edit the .gemspec file fields: name, summary, description, authors, email, and homepage
+1. Update the LICENSE.txt file with your company name
+
+## Building non-tool / widget plugins
+
+1. <Path to COSMOS installation>/openc3.sh cli rake build VERSION=X.Y.Z (or openc3.bat for Windows)
+   - VERSION is required
+   - gem file will be built locally
+
+## Building tool / widget plugins using a local Ruby/Node/pnpm/Rake Environment
+
+1. pnpm install --frozen-lockfile --ignore-scripts
+1. rake build VERSION=1.0.0
+
+## Building tool / widget plugins using Docker and the openc3-node container
+
+If you don’t have a local node environment, you can use our openc3-node container to build custom tools and custom widgets
+
+Mac / Linux:
+
+```
+docker run -it -v `pwd`:/openc3/local:z -w /openc3/local docker.io/openc3inc/openc3-node sh
+```
+
+Windows:
+
+```
+docker run -it -v %cd%:/openc3/local -w /openc3/local docker.io/openc3inc/openc3-node sh
+```
+
+1. pnpm install --frozen-lockfile --ignore-scripts
+1. rake build VERSION=1.0.0
+
+## Installing into OpenC3 COSMOS
+
+1. Go to the OpenC3 Admin Tool, Plugins Tab
+1. Click the install button and choose your plugin.gem file
+1. Fill out plugin parameters
+1. Click Install
+
+## Contributing
+
+We encourage you to contribute to OpenC3!
+
+Contributing is easy.
+
+1. Fork the project
+2. Create a feature branch
+3. Make your changes
+4. Submit a pull request
+
+Before any contributions can be incorporated we do require all contributors to agree to a Contributor License Agreement
+
+This protects both you and us and you retain full rights to any code you write.
+
+## License
+
+This OpenC3 plugin is released under the MIT License. See [LICENSE.txt](LICENSE.txt)
+
+================================================================================
+
+
+================================================================================
+FILE: mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module/gem_debug2/openc3-cosmos-obc-module-0.0.0.20260405225619/Readmeobc.md
+================================================================================
+
+FILE INFORMATION:
+----------------------------------------
+Size: 4.1 KB
+Extension: .md
+Language: text
+Location: mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module/gem_debug2/openc3-cosmos-obc-module-0.0.0.20260405225619/Readmeobc.md
+Relative Path: mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module/gem_debug2/openc3-cosmos-obc-module-0.0.0.20260405225619
+Created: 2026-04-05 20:57:32 (Europe/Paris / GMT+02:00)
+Modified: 2026-04-05 20:57:32 (Europe/Paris / GMT+02:00)
+MD5: e5c286ef8b93e4b99e416b29ee76369d
+SHA256: f0c24e053a9a3e020f8558c7bedf2c396cde2b0f203fa28f185d20e7285b4dc3
+Encoding: UTF-8
+
+FILE CONTENT:
+----------------------------------------
+Satellite OBC Module - Lab #2
+OpenC3 COSMOS Integration with Onboard Computer
+Student: Jorge andre Castro
+Course: Satellite Communication Systems
+Institution: Cape Peninsula University of Technology / F'SATI
+1. Overview
+This project implements an independent Onboard Computer (OBC) ground station interface using OpenC3 COSMOS 6.10.4. The system communicates with a virtual satellite OBC via UDP and MQTT protocols, providing real-time command and telemetry capabilities for satellite housekeeping operations.
+2. System Architecture
+plain
+Copy
+┌─────────────┐    UDP     ┌─────────────┐    MQTT    ┌─────────┐
+│   COSMOS    │ ◄────────► │  Packet     │ ◄────────► │  OBC    │
+│   (OBC      │   Port     │  Handler    │   Topic    │  App    │
+│   Target)   │   8090     │  (Python)   │  satelliteSS/obc  │  (Sim)  │
+└─────────────┘            └─────────────┘            └─────────┘
+       ▲                                                       │
+       │                                                       │
+       └───────────────────────────────────────────────────────┘
+                         MQTT Telemetry
+                    (TLMLoader injects to COSMOS)
+3. Command Set (Table 2)
+Table
+Command	Hex Range	Decimal	Function
+SET_DESIGNATOR	0x0200-0x0203	512-515	Assign OBC ID (0-3)
+SET_HK_BEACON_PERIOD	0x0204-0x020E	516-526	Set housekeeping interval
+GET_VERSION	0x020F	527	Request firmware version
+GET_IMAGE	0x0210	528	Request boot images
+GET_UPTIME	0x0211	529	Request startup time
+4. Telemetry Structure
+Table
+Field	Type	Description
+OBC_ID	UINT 8	Designator (0-3)
+UPTIME	UINT 32	Seconds since startup
+FW_VERSION	UINT 16	Firmware (x100)
+BOOT_IMAGE	UINT 8	Current image
+NEXT_IMAGE	UINT 8	Next boot image
+HK_PERIOD	UINT 16	Beacon interval
+TEMP	UINT 16	Temperature (x100)
+VOLTAGE_3V	UINT 16	3.3V rail (x100)
+VOLTAGE_5V	UINT 16	5V rail (x100)
+HK_MESSAGE	STRING	Raw housekeeping data
+5. File Structure
+plain
+Copy
+openc3-cosmos-obc-module/
+├── targets/OBC/cmd_tlm/
+│   ├── cmd.txt          # 5 command definitions
+│   └── tlm.txt          # Telemetry packet structure
+├── microservices/
+│   ├── PACKETHANDLER/
+│   │   └── packethandler.py    # UDP to MQTT bridge
+│   └── TLMLOADER/
+│       └── tlmloader.py        # MQTT to COSMOS injector
+├── plugin.txt           # Interface configuration
+└── openc3-cosmos-obc-module.gemspec
+6. Network Configuration
+Table
+Parameter	Value
+COSMOS Host	192.168.1.84
+UDP Command Port	8090
+MQTT Broker	192.168.1.84:1883
+MQTT Topic	satelliteSS/obc
+7. Build & Run
+Build Plugin
+powershell
+Copy
+cd openc3-cosmos-obc-module
+..\openc3.bat cli rake build VERSION=1.0.0
+Start COSMOS
+powershell
+Copy
+cd ..
+.\openc3.bat start
+Run OBC Simulator
+powershell
+Copy
+.\ObcApp.exe 192.168.1.84
+Run Packet Handler (standalone)
+powershell
+Copy
+cd openc3-cosmos-obc-module\microservices\PACKETHANDLER
+python packethandler.py
+8. Test Results
+All 5 commands validated and operational:
+plain
+Copy
+✅ SET_DESIGNATOR (0x200)      → OBC ID assignment
+✅ SET_HK_BEACON_PERIOD (0x208) → 520s interval set
+✅ GET_VERSION (0x20F)          → Firmware 1.01
+✅ GET_IMAGE (0x210)            → Boot images retrieved
+✅ GET_UPTIME (0x211)           → Startup time received
+9. Key Features
+Independent Module: Separate from Lab #1 COMMS system
+Bidirectional Communication: Commands and telemetry
+Real-time Processing: UDP → MQTT → COSMOS pipeline
+Robust Parsing: Regex-based telemetry extraction
+Standalone Execution: PacketHandler runs outside Docker
+10. Technologies
+OpenC3 COSMOS 6.10.4
+Python 3.11
+MQTT (paho-mqtt 1.6.1)
+UDP Sockets
+Docker Desktop
+Repository: https://github.com/jorgeandrecastro/satelliteSS-cosmos-obc
+Date: March 17, 2026
+================================================================================
+
+
+================================================================================
+FILE: mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module/gem_debug2/openc3-cosmos-obc-module-0.0.0.20260405225619/requirements.txt
+================================================================================
+
+FILE INFORMATION:
+----------------------------------------
+Size: 22 B
+Extension: .txt
+Language: text
+Location: mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module/gem_debug2/openc3-cosmos-obc-module-0.0.0.20260405225619/requirements.txt
+Relative Path: mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module/gem_debug2/openc3-cosmos-obc-module-0.0.0.20260405225619
+Created: 2026-04-05 20:57:33 (Europe/Paris / GMT+02:00)
+Modified: 2026-04-05 20:57:33 (Europe/Paris / GMT+02:00)
+MD5: f844dbb15ef7e1f2f44d36e931c1626f
+SHA256: a7790d5523caee95e03e11555eb20fba6f893444f9098b8c633fc3a4adf9a2ef
+Encoding: ASCII
+
+FILE CONTENT:
+----------------------------------------
+# Python dependencies
+
+================================================================================
+
+
+================================================================================
+BINARY/EXCLUDED FILES (not included in text content)
+================================================================================
+- mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module/gem_debug2/openc3-cosmos-obc-module-0.0.0.20260405225619/Rakefile
+
+
+================================================================================
+FILE: mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module/microservices/PACKETHANDLER/packethandler.py
+================================================================================
+
+FILE INFORMATION:
+----------------------------------------
+Size: 1.16 KB
+Extension: .py
+Language: python
+Location: mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module/microservices/PACKETHANDLER/packethandler.py
+Relative Path: mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module/microservices/PACKETHANDLER
+Created: 2026-03-17 19:52:14 (Europe/Paris / GMT+01:00)
+Modified: 2026-04-03 17:08:07 (Europe/Paris / GMT+02:00)
+MD5: 8458491806cd08f4e2cdb9f7722060ed
+SHA256: 7d499e4935c7b31ee9a920bf7d66a5cb1ff5c7c6e234ed6f0b91bb5ed439fcc9
+Encoding: UTF-8
+
+FILE CONTENT:
+----------------------------------------
+import time
+import sys
+import socket
+import struct
+import logging
+import paho.mqtt.publish as publish
+
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+logger = logging.getLogger(__name__)
+
+# CHANGEMENT ICI : Port 8090 pour l'OBC
+UDP_PORT = 8090 
+host = "0.0.0.0"
+MQTT_BROKER = "host.docker.internal"
+MQTT_PORT = 1883
+Topic = "satelliteSS/obc" # Topic spécifique OBC
+
+sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+
+try:
+    sock.bind((host, UDP_PORT))
+    logger.info(f"OBC PacketHandler listening on UDP {UDP_PORT}")
+except Exception as e:
+    logger.error(f"Could not bind OBC: {e}")
+    sys.exit(1)
+
+while True:
+    try:
+        data, addr = sock.recvfrom(1024)
+        if data:
+            # On récupère l'ID de la commande (ex: 512 pour Set Designator)
+            cmd_id = struct.unpack(">H", data[:2])[0]
+            publish.single(Topic, payload=str(cmd_id), hostname=MQTT_BROKER, port=MQTT_PORT)
+            logger.info(f"OBC Published CMD {cmd_id} to MQTT")
+    except Exception as e:
+        logger.error(f"OBC Loop error: {e}")
+================================================================================
+
+
+================================================================================
+FILE: mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module/microservices/TLMLOADER/tlmloader.py
+================================================================================
+
+FILE INFORMATION:
+----------------------------------------
+Size: 1.73 KB
+Extension: .py
+Language: python
+Location: mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module/microservices/TLMLOADER/tlmloader.py
+Relative Path: mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module/microservices/TLMLOADER
+Created: 2026-03-17 19:52:56 (Europe/Paris / GMT+01:00)
+Modified: 2026-04-03 17:08:18 (Europe/Paris / GMT+02:00)
+MD5: cf5749b8317ba71df84dc2c94b9ac6fd
+SHA256: 71c8c13f9cf99bf6ebf02093f91c47b4205770611d817b95f8894169dd3d16f5
+Encoding: UTF-8
+
+FILE CONTENT:
+----------------------------------------
+from openc3.utilities.logger import Logger
+from openc3.api import inject_tlm
+import paho.mqtt.client as mqtt
+import time
+
+# Configuration
+MQTT_BROKER = "host.docker.internal" 
+MQTT_PORT = 1883 
+TOPIC = "satelliteSS/#"
+
+def on_message(client, userdata, message):
+    try:
+        msg = message.payload.decode()
+        # On filtre pour ne prendre que les messages de l'OBC
+        if "ObcSS" in msg:
+            Logger.info(f"OBC MQTT reçu : {msg}")
+            
+            # 1. Firmware -> Paquet GET_VERSION
+            if "Firmware" in msg:
+                inject_tlm("OBC", "GET_VERSION", {"FW_VER": msg})
+                Logger.info(f"Injecté OBC VERSION: {msg}")
+
+            # 2. Uptime / Startup -> Paquet GET_UPTIME
+            elif "Startup" in msg or "Connected" in msg:
+                inject_tlm("OBC", "GET_UPTIME", {"TIME_VAL": msg})
+                Logger.info(f"Injecté OBC UPTIME: {msg}")
+
+            # 3. Le reste (ID value, etc.) -> Paquet SET_DESIGNATOR
+            else:
+                inject_tlm("OBC", "SET_DESIGNATOR", {"DATA": msg})
+                Logger.info(f"Injecté OBC DESIGNATOR: {msg}")
+
+    except Exception as e:
+        Logger.error(f"Erreur processing OBC : {e}")
+
+def main():
+    client = mqtt.Client(callback_api_version=mqtt.CallbackAPIVersion.VERSION2)
+    client.on_message = on_message
+    
+    while True:
+        try:
+            Logger.info(f"Connexion OBC MQTT sur {MQTT_BROKER}...")
+            client.connect(MQTT_BROKER, MQTT_PORT, 60)
+            client.subscribe(TOPIC)
+            client.loop_forever()
+        except Exception as e:
+            Logger.error(f"Échec OBC : {e}. Retrying in 5s...")
+            time.sleep(5)
+
+if __name__ == "__main__":
+    main()
+================================================================================
+
+
+================================================================================
+BINARY/EXCLUDED FILES (not included in text content)
+================================================================================
+- mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module/photosTest/OBcApp.png
 
 
 ================================================================================
@@ -541,33 +1177,30 @@ FILE: mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module/targets/OBC/cmd_tlm/cmd.txt
 
 FILE INFORMATION:
 ----------------------------------------
-Size: 680 B
+Size: 512 B
 Extension: .txt
 Language: text
 Location: mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module/targets/OBC/cmd_tlm/cmd.txt
 Relative Path: mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module/targets/OBC/cmd_tlm
 Created: 2026-03-17 19:50:01 (Europe/Paris / GMT+01:00)
-Modified: 2026-03-17 20:00:55 (Europe/Paris / GMT+01:00)
-MD5: 20bc325ee38ca323b1e688c3ef47b307
-SHA256: fe1500c8e4dc123adf8468d1bd27d77b48e891d8c3a0bdb0d8f2b7352d4e564b
+Modified: 2026-04-03 16:49:49 (Europe/Paris / GMT+02:00)
+MD5: 529182eb77325555a3b8c4fd67377a3a
+SHA256: b4f04b2d55bf78082c806d23c3558c01104cf035668bad6cbf6bfc5e5760cf7c
 Encoding: ASCII
 
 FILE CONTENT:
 ----------------------------------------
-COMMAND OBC SET_DESIGNATOR BIG_ENDIAN "Set OBC Designator 0-3"
-  PARAMETER OBC_ID 0 16 UINT 512 515 512 "OBC ID 0x0200-0x0203" BIG_ENDIAN
+COMMAND OBC SET_DESIGNATOR BIG_ENDIAN "Set OBC ID"
+  APPEND_ID_PARAMETER ID_VAL 16 INT 512 515 512 "ID value (0x0200-0x0203)"
 
-COMMAND OBC SET_HK_BEACON_PERIOD BIG_ENDIAN "Set Housekeeping Beacon Period"
-  PARAMETER PERIOD 0 16 UINT 516 526 520 "Period 0x0204-0x020E seconds" BIG_ENDIAN
+COMMAND OBC HK_BEACON_PERIOD BIG_ENDIAN "Set Beacon Delay"
+  APPEND_ID_PARAMETER DELAY_VAL 16 INT 516 526 516 "Delay (0x0204-0x020E)"
 
-COMMAND OBC GET_VERSION BIG_ENDIAN "Get OBC Firmware Version"
-  PARAMETER CMD_ID 0 16 UINT 527 527 527 "Command 0x020F" BIG_ENDIAN
-
-COMMAND OBC GET_IMAGE BIG_ENDIAN "Get Boot Images"
-  PARAMETER CMD_ID 0 16 UINT 528 528 528 "Command 0x0210" BIG_ENDIAN
+COMMAND OBC GET_VERSION BIG_ENDIAN "Get Firmware Version"
+  APPEND_ID_PARAMETER CMD_ID 16 INT 527 527 527 "Version (0x020F)"
 
 COMMAND OBC GET_UPTIME BIG_ENDIAN "Get Time Since Startup"
-  PARAMETER CMD_ID 0 16 UINT 529 529 529 "Command 0x0211" BIG_ENDIAN
+  APPEND_ID_PARAMETER CMD_ID 16 INT 529 529 529 "Uptime (0x0211)"
 ================================================================================
 
 
@@ -577,31 +1210,30 @@ FILE: mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module/targets/OBC/cmd_tlm/tlm.txt
 
 FILE INFORMATION:
 ----------------------------------------
-Size: 653 B
+Size: 417 B
 Extension: .txt
 Language: text
 Location: mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module/targets/OBC/cmd_tlm/tlm.txt
 Relative Path: mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module/targets/OBC/cmd_tlm
 Created: 2026-03-17 19:50:01 (Europe/Paris / GMT+01:00)
-Modified: 2026-03-17 20:01:06 (Europe/Paris / GMT+01:00)
-MD5: 1d5c51bcaec14dfeda2e6666431d42fb
-SHA256: e5c87d138d25dcaff14ea198b03c312dbfdf08db6293994e781026dd6e989753
+Modified: 2026-04-03 16:50:00 (Europe/Paris / GMT+02:00)
+MD5: fa7410a11a1584efaa35c2e0d06f2dc3
+SHA256: 8d10b3149fb45df30490cf1c6d38428200f47d8484d459ad1d53b39ed7b36869
 Encoding: ASCII
 
 FILE CONTENT:
 ----------------------------------------
-TELEMETRY OBC STATUS BIG_ENDIAN "OBC Housekeeping Telemetry"
-  ID_ITEM ID 0 16 UINT 0x0200 "OBC Packet ID"
-  ITEM OBC_ID      16  8   UINT   "OBC Designator 0-3"
-  ITEM UPTIME      24  32  UINT   "Seconds since startup"
-  ITEM FW_VERSION  56  16  UINT   "Firmware version x100"
-  ITEM BOOT_IMAGE  72  8   UINT   "Current boot image"
-  ITEM NEXT_IMAGE  80  8   UINT   "Next boot image"
-  ITEM HK_PERIOD   88  16  UINT   "Beacon period seconds"
-  ITEM TEMP        104 16  UINT   "Temperature x100"
-  ITEM VOLTAGE_3V  120 16  UINT   "3.3V rail x100"
-  ITEM VOLTAGE_5V  136 16  UINT   "5V rail x100"
-  ITEM HK_MESSAGE  152 1024 STRING "Housekeeping message"
+TELEMETRY OBC SET_DESIGNATOR BIG_ENDIAN "OBC ID Status"
+  APPEND_ITEM DATA 1024 STRING "ID value"
+
+TELEMETRY OBC HK_BEACON_PERIOD BIG_ENDIAN "Beacon Period Status"
+  APPEND_ITEM DATA 1024 STRING "Delay value"
+
+TELEMETRY OBC GET_VERSION BIG_ENDIAN "Firmware Version"
+  APPEND_ITEM FW_VER 1024 STRING "Version"
+
+TELEMETRY OBC GET_UPTIME BIG_ENDIAN "System Uptime"
+  APPEND_ITEM TIME_VAL 1024 STRING "Time since startup"
 ================================================================================
 
 
@@ -636,6 +1268,138 @@ class Obc:
     def utility(self):
         pass
 
+================================================================================
+
+
+================================================================================
+FILE: mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module/targets/OBC/microservices/PACKETHANDLER/packethandler.py
+================================================================================
+
+FILE INFORMATION:
+----------------------------------------
+Size: 1.16 KB
+Extension: .py
+Language: python
+Location: mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module/targets/OBC/microservices/PACKETHANDLER/packethandler.py
+Relative Path: mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module/targets/OBC/microservices/PACKETHANDLER
+Created: 2026-04-05 21:00:50 (Europe/Paris / GMT+02:00)
+Modified: 2026-04-03 17:08:07 (Europe/Paris / GMT+02:00)
+MD5: 8458491806cd08f4e2cdb9f7722060ed
+SHA256: 7d499e4935c7b31ee9a920bf7d66a5cb1ff5c7c6e234ed6f0b91bb5ed439fcc9
+Encoding: UTF-8
+
+FILE CONTENT:
+----------------------------------------
+import time
+import sys
+import socket
+import struct
+import logging
+import paho.mqtt.publish as publish
+
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+logger = logging.getLogger(__name__)
+
+# CHANGEMENT ICI : Port 8090 pour l'OBC
+UDP_PORT = 8090 
+host = "0.0.0.0"
+MQTT_BROKER = "host.docker.internal"
+MQTT_PORT = 1883
+Topic = "satelliteSS/obc" # Topic spécifique OBC
+
+sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+
+try:
+    sock.bind((host, UDP_PORT))
+    logger.info(f"OBC PacketHandler listening on UDP {UDP_PORT}")
+except Exception as e:
+    logger.error(f"Could not bind OBC: {e}")
+    sys.exit(1)
+
+while True:
+    try:
+        data, addr = sock.recvfrom(1024)
+        if data:
+            # On récupère l'ID de la commande (ex: 512 pour Set Designator)
+            cmd_id = struct.unpack(">H", data[:2])[0]
+            publish.single(Topic, payload=str(cmd_id), hostname=MQTT_BROKER, port=MQTT_PORT)
+            logger.info(f"OBC Published CMD {cmd_id} to MQTT")
+    except Exception as e:
+        logger.error(f"OBC Loop error: {e}")
+================================================================================
+
+
+================================================================================
+FILE: mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module/targets/OBC/microservices/TLMLOADER/tlmloader.py
+================================================================================
+
+FILE INFORMATION:
+----------------------------------------
+Size: 1.73 KB
+Extension: .py
+Language: python
+Location: mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module/targets/OBC/microservices/TLMLOADER/tlmloader.py
+Relative Path: mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module/targets/OBC/microservices/TLMLOADER
+Created: 2026-04-05 21:01:00 (Europe/Paris / GMT+02:00)
+Modified: 2026-04-03 17:08:18 (Europe/Paris / GMT+02:00)
+MD5: cf5749b8317ba71df84dc2c94b9ac6fd
+SHA256: 71c8c13f9cf99bf6ebf02093f91c47b4205770611d817b95f8894169dd3d16f5
+Encoding: UTF-8
+
+FILE CONTENT:
+----------------------------------------
+from openc3.utilities.logger import Logger
+from openc3.api import inject_tlm
+import paho.mqtt.client as mqtt
+import time
+
+# Configuration
+MQTT_BROKER = "host.docker.internal" 
+MQTT_PORT = 1883 
+TOPIC = "satelliteSS/#"
+
+def on_message(client, userdata, message):
+    try:
+        msg = message.payload.decode()
+        # On filtre pour ne prendre que les messages de l'OBC
+        if "ObcSS" in msg:
+            Logger.info(f"OBC MQTT reçu : {msg}")
+            
+            # 1. Firmware -> Paquet GET_VERSION
+            if "Firmware" in msg:
+                inject_tlm("OBC", "GET_VERSION", {"FW_VER": msg})
+                Logger.info(f"Injecté OBC VERSION: {msg}")
+
+            # 2. Uptime / Startup -> Paquet GET_UPTIME
+            elif "Startup" in msg or "Connected" in msg:
+                inject_tlm("OBC", "GET_UPTIME", {"TIME_VAL": msg})
+                Logger.info(f"Injecté OBC UPTIME: {msg}")
+
+            # 3. Le reste (ID value, etc.) -> Paquet SET_DESIGNATOR
+            else:
+                inject_tlm("OBC", "SET_DESIGNATOR", {"DATA": msg})
+                Logger.info(f"Injecté OBC DESIGNATOR: {msg}")
+
+    except Exception as e:
+        Logger.error(f"Erreur processing OBC : {e}")
+
+def main():
+    client = mqtt.Client(callback_api_version=mqtt.CallbackAPIVersion.VERSION2)
+    client.on_message = on_message
+    
+    while True:
+        try:
+            Logger.info(f"Connexion OBC MQTT sur {MQTT_BROKER}...")
+            client.connect(MQTT_BROKER, MQTT_PORT, 60)
+            client.subscribe(TOPIC)
+            client.loop_forever()
+        except Exception as e:
+            Logger.error(f"Échec OBC : {e}. Retrying in 5s...")
+            time.sleep(5)
+
+if __name__ == "__main__":
+    main()
 ================================================================================
 
 
@@ -689,33 +1453,37 @@ Put image files in this directory for use in Telemetry Viewer Canvas Image widge
 
 
 ================================================================================
-FILE: mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module/targets/OBC/screens/status.txt
+FILE: mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module/targets/OBC/screens/obc.txt
 ================================================================================
 
 FILE INFORMATION:
 ----------------------------------------
-Size: 127 B
+Size: 443 B
 Extension: .txt
 Language: text
-Location: mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module/targets/OBC/screens/status.txt
+Location: mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module/targets/OBC/screens/obc.txt
 Relative Path: mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module/targets/OBC/screens
 Created: 2026-03-17 19:50:01 (Europe/Paris / GMT+01:00)
-Modified: 2026-03-17 19:50:01 (Europe/Paris / GMT+01:00)
-MD5: 095c70bc18ece26ecd747f17d3537d03
-SHA256: fc88ceb6eac56af8da8144827a3503e8e2c5d171af1f6c10ef22b8cf41d91ce7
+Modified: 2026-04-03 16:50:16 (Europe/Paris / GMT+02:00)
+MD5: de5ebb93238dae2b5b2dae6dcc35dd6c
+SHA256: 9565e3f94d3349480eb996e3adfc950c191cb1e1d57e13a2b523177ab8c4a763
 Encoding: ASCII
 
 FILE CONTENT:
 ----------------------------------------
-SCREEN AUTO AUTO 1.0
-
-TITLE "Status"
-
-VERTICALBOX "Information"
-  LABELVALUE OBC STATUS VALUE
-  LABELVALUE OBC STATUS BOOL
+VERTICALBOX "OBC Commands"
+  HORIZONTALLINE
+  NAMED_WIDGET ID_IN TEXTFIELD 12 "512"
+  BUTTON 'SET ID' 'var val = screen.getNamedWidget("ID_IN").text(); api.cmd("OBC SET_DESIGNATOR with ID_VAL "+val)'
+  
+  BUTTON 'GET VERSION' 'api.cmd("OBC GET_VERSION")'
 END
 
+VERTICALBOX "OBC Telemetry"
+  LABELVALUE OBC SET_DESIGNATOR DATA CONVERTED 112
+  LABELVALUE OBC GET_VERSION FW_VER CONVERTED 112
+  LABELVALUE OBC GET_UPTIME TIME_VAL CONVERTED 112
+END
 ================================================================================
 
 
@@ -746,6 +1514,35 @@ IGNORE_PARAMETER PKTID
 # Ignored Items
 IGNORE_ITEM PKTID
 
+================================================================================
+
+
+================================================================================
+FILE: mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module/Commandes.md
+================================================================================
+
+FILE INFORMATION:
+----------------------------------------
+Size: 538 B
+Extension: .md
+Language: text
+Location: mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module/Commandes.md
+Relative Path: mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module
+Created: 2026-04-05 21:53:15 (Europe/Paris / GMT+02:00)
+Modified: 2026-04-05 21:57:30 (Europe/Paris / GMT+02:00)
+MD5: 0113baef5935cff397f0e31bacc98d47
+SHA256: f661758b2f50890fd44b693c3fdbf7bfef6244a5accf0ad04f374095fcd4a61c
+Encoding: ASCII
+
+FILE CONTENT:
+----------------------------------------
+PS C:\Users\Georg\Desktop\satelliteSS_Lab1\satelliteSS\mqtt5\cosmos-6.10.4\openc3-cosmos-obc-module> del openc3-cosmos-obc-module-*.gem
+PS C:\Users\Georg\Desktop\satelliteSS_Lab1\satelliteSS\mqtt5\cosmos-6.10.4\openc3-cosmos-obc-module> gem build openc3-cosmos-obc-module.gemspec
+  Successfully built RubyGem
+  Name: openc3-cosmos-obc-module
+  Version: 0.0.0.20260405234459
+  File: openc3-cosmos-obc-module-0.0.0.20260405234459.gem
+PS C:\Users\Georg\Desktop\satelliteSS_Lab1\satelliteSS\mqtt5\cosmos-6.10.4\openc3-cosmos-obc-module>
 ================================================================================
 
 
@@ -785,34 +1582,34 @@ FILE: mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module/plugin.txt
 
 FILE INFORMATION:
 ----------------------------------------
-Size: 334 B
+Size: 494 B
 Extension: .txt
 Language: text
 Location: mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module/plugin.txt
 Relative Path: mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module
 Created: 2026-03-17 19:49:39 (Europe/Paris / GMT+01:00)
-Modified: 2026-03-17 20:02:43 (Europe/Paris / GMT+01:00)
-MD5: f1d2182f35a489345e87b9854ca47ccb
-SHA256: 2ae7c08c4516a751755f19f0776ee42b4419737022c1da5dfb9e96338d2ace62
+Modified: 2026-04-05 21:44:46 (Europe/Paris / GMT+02:00)
+MD5: fa875c6f5a32b9042cfb64f64a5e973b
+SHA256: 0117f9fa9731b98f41108c38c0717a6509c27c085107f3ea6b52abedcfd5cb51
 Encoding: ASCII
 
 FILE CONTENT:
 ----------------------------------------
-TARGET OBC OBC
+VARIABLE obc_target_name OBC
+VARIABLE obc_udp_port 8090
 
-INTERFACE OBC_INT udp_interface.rb 192.168.1.84 8090 8091 8092 nil
-  MAP_CMD_TARGET OBC
-  MAP_TLM_TARGET OBC
+TARGET OBC <%= obc_target_name %>
 
-MICROSERVICE PACKETHANDLER PACKETHANDLER-SERVICE
-  CMD python packethandler.py
-  TARGET_NAME OBC
-  WORK_DIR .
+INTERFACE <%= obc_target_name %>_INT openc3/interfaces/udp_interface.py host.docker.internal <%= obc_udp_port %> nil 8092 nil
+  MAP_CMD_TARGET <%= obc_target_name %>
+  MAP_TLM_TARGET <%= obc_target_name %>
 
-MICROSERVICE TLMLOADER TLMLOADER-SERVICE
-  CMD python tlmloader.py
-  TARGET_NAME OBC
-  WORK_DIR .
+MICROSERVICE PACKETHANDLER packethandler-microservice
+  CMD python3 packethandler.py
+  TARGET_NAME <%= obc_target_name %>
+
+MICROSERVICE TLMLOADER tlmloader-microservice
+  CMD python3 tlmloader.py
 ================================================================================
 
 
@@ -1059,7 +1856,7 @@ FILE CONTENT:
 ================================================================================
 BINARY/EXCLUDED FILES (not included in text content)
 ================================================================================
-- mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module/openc3-cosmos-obc-module-1.0.0.gem
+- mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module/openc3-cosmos-obc-module-0.0.0.20260405234459.gem
 - mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module/openc3-cosmos-obc-module.gemspec
 - mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module/Rakefile
 
@@ -1201,6 +1998,8 @@ if __name__ == "__main__":
 BINARY/EXCLUDED FILES (not included in text content)
 ================================================================================
 - mqtt5/cosmos-6.10.4/openc3-cosmos-radio-module/Photos test/commande0101.png
+- mqtt5/cosmos-6.10.4/openc3-cosmos-radio-module/Photos test/Portradioandtime.png
+- mqtt5/cosmos-6.10.4/openc3-cosmos-radio-module/Photos test/porttimeradio.png
 - mqtt5/cosmos-6.10.4/openc3-cosmos-radio-module/Photos test/radio0100.png
 - mqtt5/cosmos-6.10.4/openc3-cosmos-radio-module/Photos test/radio0101.png
 - mqtt5/cosmos-6.10.4/openc3-cosmos-radio-module/Photos test/radio0102.png
@@ -1211,7 +2010,6 @@ BINARY/EXCLUDED FILES (not included in text content)
 - mqtt5/cosmos-6.10.4/openc3-cosmos-radio-module/Photos test/test0101.png
 - mqtt5/cosmos-6.10.4/openc3-cosmos-radio-module/Photos test/test0102.png
 - mqtt5/cosmos-6.10.4/openc3-cosmos-radio-module/Photos test/test0103.png
-- mqtt5/cosmos-6.10.4/openc3-cosmos-radio-module/Photos test/test0103sub.png
 
 
 ================================================================================
@@ -1376,10 +2174,14 @@ Repository: C:\Users\Georg\Desktop\satelliteSS_Lab1\satelliteSS\mqtt5\cosmos-6.1
 ================================================================================
 BINARY/EXCLUDED FILES (not included in text content)
 ================================================================================
-- mqtt5/cosmos-6.10.4/openc3-cosmos-radio-module/PhotosTestmosquittoCosmo/Capture d'écran 2026-03-17 202038.png
-- mqtt5/cosmos-6.10.4/openc3-cosmos-radio-module/PhotosTestmosquittoCosmo/Capture d'écran 2026-03-17 202252.png
-- mqtt5/cosmos-6.10.4/openc3-cosmos-radio-module/PhotosTestmosquittoCosmo/Capture d'écran 2026-03-17 202321.png
-- mqtt5/cosmos-6.10.4/openc3-cosmos-radio-module/PhotosTestmosquittoCosmo/Capture d'écran 2026-03-17 202350.png
+- mqtt5/cosmos-6.10.4/openc3-cosmos-radio-module/PhotosTestmosquittoCosmo/Comsend1.png
+- mqtt5/cosmos-6.10.4/openc3-cosmos-radio-module/PhotosTestmosquittoCosmo/Comsend2.png
+- mqtt5/cosmos-6.10.4/openc3-cosmos-radio-module/PhotosTestmosquittoCosmo/Conected.png
+- mqtt5/cosmos-6.10.4/openc3-cosmos-radio-module/PhotosTestmosquittoCosmo/graph.png
+- mqtt5/cosmos-6.10.4/openc3-cosmos-radio-module/PhotosTestmosquittoCosmo/Install.png
+- mqtt5/cosmos-6.10.4/openc3-cosmos-radio-module/PhotosTestmosquittoCosmo/MicroservicesActivation.png
+- mqtt5/cosmos-6.10.4/openc3-cosmos-radio-module/PhotosTestmosquittoCosmo/Porttime5se.png
+- mqtt5/cosmos-6.10.4/openc3-cosmos-radio-module/PhotosTestmosquittoCosmo/Telemetry.png
 
 
 ================================================================================
@@ -1695,49 +2497,72 @@ FILE: mqtt5/cosmos-6.10.4/openc3-cosmos-radio-module/plugin.txt
 
 FILE INFORMATION:
 ----------------------------------------
-Size: 1.01 KB
+Size: 1.03 KB
 Extension: .txt
 Language: text
 Location: mqtt5/cosmos-6.10.4/openc3-cosmos-radio-module/plugin.txt
 Relative Path: mqtt5/cosmos-6.10.4/openc3-cosmos-radio-module
 Created: 2026-03-11 20:01:56 (Europe/Paris / GMT+01:00)
-Modified: 2026-04-02 19:49:45 (Europe/Paris / GMT+02:00)
-MD5: 38524035b514d803a09ff622b1615349
-SHA256: 211d3d179a3c611c51f5b9c167dbd0ac1476f6568fe2c143cb3b62ac503e2002
+Modified: 2026-04-05 21:27:13 (Europe/Paris / GMT+02:00)
+MD5: 4f3bd4ba3ceca6fa2bbaebe6fa666b70
+SHA256: 4764f0bb591be8d555b4c22d3113910ac4a8e40c149b1d62722b83e0868fca7d
 Encoding: ASCII
 
 FILE CONTENT:
 ----------------------------------------
 # Set VARIABLEs here to allow variation in your plugin
 
+
+
 VARIABLE comms_target_name COMMS
+
 #VARIABLE comms_wrt_dest_prt 8080
 
+
+
 #TARGET COMMS <%= comms_target_name %>
+
 #INTERFACE <%= comms_target_name %>_INT openc3/interfaces/tcpip_client_interface.py host.docker.internal 8080 8081 10.0 None BURST
+
 #INTERFACE <%= comms_target_name %>_INT openc3/interfaces/udp_interface.py host.docker.internal 8080 8081 8082 None 
+
  # MAP_CMD_TARGET <%= comms_target_name %>
+
   
+
 VARIABLE comms_target_name COMMS
+
 VARIABLE comms_wrt_dest_prt 8080
+
 VARIABLE comms_read_prt 8081
+
 VARIABLE comms_wrt_src_prt 8082
+
+
 
 TARGET COMMS <%= comms_target_name %>
 
+
+
 INTERFACE <%= comms_target_name %>_INT udp_interface.rb localhost <%= comms_wrt_dest_prt %> nil <%= comms_wrt_src_prt %> nil
+
    MAP_CMD_TARGET <%= comms_target_name %>
+
   
+
 MICROSERVICE PACKETHANDLER packethandler-microservice
+
   CMD python3 packethandler.py
+
   TARGET_NAME <%= comms_target_name %>
+
   PORT <%= comms_wrt_dest_prt %> UDP
 
+
+
 MICROSERVICE TLMLOADER tlmloader-microservice
+
   CMD python3 tlmloader.py
-
-
-
 ================================================================================
 
 
@@ -1747,85 +2572,88 @@ FILE: mqtt5/cosmos-6.10.4/openc3-cosmos-radio-module/README.md
 
 FILE INFORMATION:
 ----------------------------------------
-Size: 1.8 KB
+Size: 2.13 KB
 Extension: .md
 Language: text
 Location: mqtt5/cosmos-6.10.4/openc3-cosmos-radio-module/README.md
 Relative Path: mqtt5/cosmos-6.10.4/openc3-cosmos-radio-module
 Created: 2026-03-11 20:01:56 (Europe/Paris / GMT+01:00)
-Modified: 2026-03-11 20:01:56 (Europe/Paris / GMT+01:00)
-MD5: 75a0770f6d1d14189824fc1734d72e77
-SHA256: aa33c25e0d9f6261c7977f7431e5389f9dd3eaa7e4a80405edcc953855cb253e
+Modified: 2026-04-02 20:43:56 (Europe/Paris / GMT+02:00)
+MD5: 788631909ef1d7a7003fa30a5983f03b
+SHA256: 65035abf864f114c41c5bbac8344b1a228fc5e2602d3fab686e3395d08afe3ce
 Encoding: UTF-8
 
 FILE CONTENT:
 ----------------------------------------
-# OpenC3 COSMOS Plugin
+# OpenC3 Cosmos Radio Module - satelliteSS
 
-See the [OpenC3](https://openc3.com) documentation for all things OpenC3.
+## Purpose
+OpenC3 plugin to integrate the **radio module** via **MQTT** (Mosquitto). Bidirectional bridge:
 
-Update this comment with your own description.
+- **Commandes UDP** → MQTT `satelliteSS/radio`
+- **MQTT** `satelliteSS/#` → TLM OpenC3 (target **COMMS**)
 
-## Getting Started
+## Key Ports
+| Service | Protocole | Port | Host              |
+|---------|-----------|------|-------------------|
+| PACKETHANDLER | UDP  | 8080 | localhost         |
+| MQTT    | TCP   | 1883 | host.docker.internal |
 
-1. Edit the .gemspec file fields: name, summary, description, authors, email, and homepage
-1. Update the LICENSE.txt file with your company name
+## Features
+### 1. PACKETHANDLER (UDP → MQTT)
+- Listens on UDP 8080
+- Extracts command ID (2 bytes big-endian)
+- Publishes to MQTT `satelliteSS/radio`
 
-## Building non-tool / widget plugins
-
-1. <Path to COSMOS installation>/openc3.sh cli rake build VERSION=X.Y.Z (or openc3.bat for Windows)
-   - VERSION is required
-   - gem file will be built locally
-
-## Building tool / widget plugins using a local Ruby/Node/pnpm/Rake Environment
-
-1. pnpm install --frozen-lockfile --ignore-scripts
-1. rake build VERSION=1.0.0
-
-## Building tool / widget plugins using Docker and the openc3-node container
-
-If you don’t have a local node environment, you can use our openc3-node container to build custom tools and custom widgets
-
-Mac / Linux:
-
-```
-docker run -it -v `pwd`:/openc3/local:z -w /openc3/local docker.io/openc3inc/openc3-node sh
+**Exemple:**
+```python
+cmd_id = struct.unpack('>H', data[:2])[0]  # ex: 258 pour SET_MODE
+publish.single('satelliteSS/radio', str(cmd_id), ...)
 ```
 
-Windows:
+### 2. TLMLOADER (MQTT → OpenC3 TLM)
+- Subscribes to `satelliteSS/#`
+- Parses and injects TLM:
 
-```
-docker run -it -v %cd%:/openc3/local -w /openc3/local docker.io/openc3inc/openc3-node sh
-```
+| Message Type     | Example              | TLM Packet  | Item    |
+|------------------|----------------------|-------------|---------|
+| Firmware Version | Firmware v1.2       | VERSION     | FW_VER  |
+| setMode          | setMode OPERATIONAL | SET_MODE    | MODE    |
+| Beacon/Other     | Beacon data         | BEACON      | INACTBEA|
 
-1. pnpm install --frozen-lockfile --ignore-scripts
-1. rake build VERSION=1.0.0
+## Main Commands
+| Nom      | ID  | Packet             |
+|----------|-----|--------------------|
+| SET_MODE | 258 | SET_MODE BIG_ENDIAN|
+| VERSION  | 259 | VERSION BIG_ENDIAN |
 
-## Installing into OpenC3 COSMOS
+**TLM:** All items STRING (1024 bits)
 
-1. Go to the OpenC3 Admin Tool, Plugins Tab
-1. Click the install button and choose your plugin.gem file
-1. Fill out plugin parameters
-1. Click Install
+## Installation & Startup
+1. **Build:** `rake build VERSION=1.0.9`
+2. **OpenC3 Admin → Plugins → Install** `openc3-cosmos-radio-module-1.0.9.gem`
+3. **Start services:**
+   ```
+   docker compose -f mqtt5/compose.yml up
+   ```
+4. Check PACKETHANDLER/TLMLOADER microservices active.
 
-## Contributing
+## Proof of Functionality
+Screenshots:
+- `Photos test/radio0100.png`: TLM displayed
+- `Photos test/commande0101.png`: Command sent
+- `PhotosTestmosquittoCosmo/`: MQTT→Cosmos tests
 
-We encourage you to contribute to OpenC3!
+**Troubleshooting:**
+- Check MQTT broker (mosquitto.conf, docker logs)
+- Microservice logs: `docker logs <container>`
+- Free ports: 8080 UDP, 1883 TCP
 
-Contributing is easy.
+**Dependencies:** `paho-mqtt` (auto via requirements.txt)
 
-1. Fork the project
-2. Create a feature branch
-3. Make your changes
-4. Submit a pull request
+---
 
-Before any contributions can be incorporated we do require all contributors to agree to a Contributor License Agreement
-
-This protects both you and us and you retain full rights to any code you write.
-
-## License
-
-This OpenC3 plugin is released under the MIT License. See [LICENSE.txt](LICENSE.txt)
+*satelliteSS Lab1 Plugin - Radio Module MQTT-OpenC3 Bridge*
 
 ================================================================================
 
@@ -1859,6 +2687,7 @@ paho-mqtt
 BINARY/EXCLUDED FILES (not included in text content)
 ================================================================================
 - mqtt5/cosmos-6.10.4/openc3-cosmos-radio-module/openc3-cosmos-radio-module-1.0.9.gem
+- mqtt5/cosmos-6.10.4/openc3-cosmos-radio-module/openc3-cosmos-radio-module-2.1.0.gem
 - mqtt5/cosmos-6.10.4/openc3-cosmos-radio-module/openc3-cosmos-radio-module.gemspec
 - mqtt5/cosmos-6.10.4/openc3-cosmos-radio-module/Rakefile
 
@@ -2713,75 +3542,55 @@ accessLog: {}
 
 
 ================================================================================
-FILE: mqtt5/cosmos-6.10.4/plugins/DEFAULT/openc3-cosmos-radio-module/plugin_instance.json
+FILE: mqtt5/cosmos-6.10.4/plugins/DEFAULT/openc3-cosmos-obc-module/plugin_instance.json
 ================================================================================
 
 FILE INFORMATION:
 ----------------------------------------
-Size: 1.88 KB
+Size: 1.15 KB
 Extension: .json
 Language: json
-Location: mqtt5/cosmos-6.10.4/plugins/DEFAULT/openc3-cosmos-radio-module/plugin_instance.json
-Relative Path: mqtt5/cosmos-6.10.4/plugins/DEFAULT/openc3-cosmos-radio-module
-Created: 2026-04-02 19:50:57 (Europe/Paris / GMT+02:00)
-Modified: 2026-04-02 19:50:57 (Europe/Paris / GMT+02:00)
-MD5: f5d1f6d53dc5bd646e664c9f088e9d34
-SHA256: 82e176264b5488bd107ea5c8ce0522f97985511ed8b09724e0283e9995dfd28b
+Location: mqtt5/cosmos-6.10.4/plugins/DEFAULT/openc3-cosmos-obc-module/plugin_instance.json
+Relative Path: mqtt5/cosmos-6.10.4/plugins/DEFAULT/openc3-cosmos-obc-module
+Created: 2026-04-05 21:46:13 (Europe/Paris / GMT+02:00)
+Modified: 2026-04-05 21:46:13 (Europe/Paris / GMT+02:00)
+MD5: 9180b574371afb766aad726052f85c76
+SHA256: be2bfc0bb03847ab0ddc2a1047ac0d9db72d48406c789ccfbc9d2d0735decda6
 Encoding: ASCII
 
 FILE CONTENT:
 ----------------------------------------
 {
-  "name": "openc3-cosmos-radio-module-1.0.9.gem__0",
+  "name": "openc3-cosmos-obc-module-0.0.0.20260405234459.gem__0",
   "variables": {
-    "comms_target_name": {
-      "value": "COMMS"
+    "obc_target_name": {
+      "value": "OBC"
     },
-    "comms_wrt_dest_prt": {
-      "value": "8080"
-    },
-    "comms_read_prt": {
-      "value": "8081"
-    },
-    "comms_wrt_src_prt": {
-      "value": "8082"
+    "obc_udp_port": {
+      "value": "8090"
     }
   },
   "plugin_txt_lines": [
-    "# Set VARIABLEs here to allow variation in your plugin",
+    "VARIABLE obc_target_name OBC",
+    "VARIABLE obc_udp_port 8090",
     "",
-    "VARIABLE comms_target_name COMMS",
-    "#VARIABLE comms_wrt_dest_prt 8080",
+    "TARGET OBC <%= obc_target_name %>",
     "",
-    "#TARGET COMMS <%= comms_target_name %>",
-    "#INTERFACE <%= comms_target_name %>_INT openc3/interfaces/tcpip_client_interface.py host.docker.internal 8080 8081 10.0 None BURST",
-    "#INTERFACE <%= comms_target_name %>_INT openc3/interfaces/udp_interface.py host.docker.internal 8080 8081 8082 None ",
-    " # MAP_CMD_TARGET <%= comms_target_name %>",
-    "  ",
-    "VARIABLE comms_target_name COMMS",
-    "VARIABLE comms_wrt_dest_prt 8080",
-    "VARIABLE comms_read_prt 8081",
-    "VARIABLE comms_wrt_src_prt 8082",
+    "INTERFACE <%= obc_target_name %>_INT openc3/interfaces/udp_interface.py host.docker.internal <%= obc_udp_port %> nil 8092 nil",
+    "  MAP_CMD_TARGET <%= obc_target_name %>",
+    "  MAP_TLM_TARGET <%= obc_target_name %>",
     "",
-    "TARGET COMMS <%= comms_target_name %>",
-    "",
-    "INTERFACE <%= comms_target_name %>_INT udp_interface.rb localhost <%= comms_wrt_dest_prt %> nil <%= comms_wrt_src_prt %> nil",
-    "   MAP_CMD_TARGET <%= comms_target_name %>",
-    "  ",
     "MICROSERVICE PACKETHANDLER packethandler-microservice",
     "  CMD python3 packethandler.py",
-    "  TARGET_NAME <%= comms_target_name %>",
-    "  PORT <%= comms_wrt_dest_prt %> UDP",
+    "  TARGET_NAME <%= obc_target_name %>",
     "",
     "MICROSERVICE TLMLOADER tlmloader-microservice",
-    "  CMD python3 tlmloader.py",
-    "",
-    ""
+    "  CMD python3 tlmloader.py"
   ],
   "needs_dependencies": true,
   "store_id": null,
-  "title": "OpenC3 openc3-cosmos-radio-module plugin",
-  "description": "openc3-cosmos-radio-module plugin for deployment to OpenC3",
+  "title": "OpenC3 openc3-cosmos-obc-module plugin",
+  "description": "openc3-cosmos-obc-module plugin for deployment to OpenC3",
   "keywords": null,
   "licenses": [
     "MIT"
@@ -2789,7 +3598,7 @@ FILE CONTENT:
   "homepage": "https://github.com/OpenC3/cosmos",
   "repository": null,
   "img_path": null,
-  "updated_at": 1775159457939924011
+  "updated_at": 1775425572381078740
 }
 ================================================================================
 
@@ -2797,7 +3606,7 @@ FILE CONTENT:
 ================================================================================
 BINARY/EXCLUDED FILES (not included in text content)
 ================================================================================
-- mqtt5/cosmos-6.10.4/plugins/DEFAULT/openc3-cosmos-radio-module/openc3-cosmos-radio-module-1.0.9.gem
+- mqtt5/cosmos-6.10.4/plugins/DEFAULT/openc3-cosmos-obc-module/openc3-cosmos-obc-module-0.0.0.20260405234459.gem
 
 
 ================================================================================
