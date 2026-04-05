@@ -1,66 +1,69 @@
-# OpenC3 COSMOS Plugin
+# OpenC3 Cosmos Radio Module - satelliteSS
 
-See the [OpenC3](https://openc3.com) documentation for all things OpenC3.
+## Purpose
+OpenC3 plugin to integrate the **radio module** via **MQTT** (Mosquitto). Bidirectional bridge:
 
-Update this comment with your own description.
+- **Commandes UDP** → MQTT `satelliteSS/radio`
+- **MQTT** `satelliteSS/#` → TLM OpenC3 (target **COMMS**)
 
-## Getting Started
+## Key Ports
+| Service | Protocole | Port | Host              |
+|---------|-----------|------|-------------------|
+| PACKETHANDLER | UDP  | 8080 | localhost         |
+| MQTT    | TCP   | 1883 | host.docker.internal |
 
-1. Edit the .gemspec file fields: name, summary, description, authors, email, and homepage
-1. Update the LICENSE.txt file with your company name
+## Features
+### 1. PACKETHANDLER (UDP → MQTT)
+- Listens on UDP 8080
+- Extracts command ID (2 bytes big-endian)
+- Publishes to MQTT `satelliteSS/radio`
 
-## Building non-tool / widget plugins
-
-1. <Path to COSMOS installation>/openc3.sh cli rake build VERSION=X.Y.Z (or openc3.bat for Windows)
-   - VERSION is required
-   - gem file will be built locally
-
-## Building tool / widget plugins using a local Ruby/Node/pnpm/Rake Environment
-
-1. pnpm install --frozen-lockfile --ignore-scripts
-1. rake build VERSION=1.0.0
-
-## Building tool / widget plugins using Docker and the openc3-node container
-
-If you don’t have a local node environment, you can use our openc3-node container to build custom tools and custom widgets
-
-Mac / Linux:
-
-```
-docker run -it -v `pwd`:/openc3/local:z -w /openc3/local docker.io/openc3inc/openc3-node sh
+**Exemple:**
+```python
+cmd_id = struct.unpack('>H', data[:2])[0]  # ex: 258 pour SET_MODE
+publish.single('satelliteSS/radio', str(cmd_id), ...)
 ```
 
-Windows:
+### 2. TLMLOADER (MQTT → OpenC3 TLM)
+- Subscribes to `satelliteSS/#`
+- Parses and injects TLM:
 
-```
-docker run -it -v %cd%:/openc3/local -w /openc3/local docker.io/openc3inc/openc3-node sh
-```
+| Message Type     | Example              | TLM Packet  | Item    |
+|------------------|----------------------|-------------|---------|
+| Firmware Version | Firmware v1.2       | VERSION     | FW_VER  |
+| setMode          | setMode OPERATIONAL | SET_MODE    | MODE    |
+| Beacon/Other     | Beacon data         | BEACON      | INACTBEA|
 
-1. pnpm install --frozen-lockfile --ignore-scripts
-1. rake build VERSION=1.0.0
+## Main Commands
+| Nom      | ID  | Packet             |
+|----------|-----|--------------------|
+| SET_MODE | 258 | SET_MODE BIG_ENDIAN|
+| VERSION  | 259 | VERSION BIG_ENDIAN |
 
-## Installing into OpenC3 COSMOS
+**TLM:** All items STRING (1024 bits)
 
-1. Go to the OpenC3 Admin Tool, Plugins Tab
-1. Click the install button and choose your plugin.gem file
-1. Fill out plugin parameters
-1. Click Install
+## Installation & Startup
+1. **Build:** `rake build VERSION=1.0.9`
+2. **OpenC3 Admin → Plugins → Install** `openc3-cosmos-radio-module-1.0.9.gem`
+3. **Start services:**
+   ```
+   docker compose -f mqtt5/compose.yml up
+   ```
+4. Check PACKETHANDLER/TLMLOADER microservices active.
 
-## Contributing
+## Proof of Functionality
+Screenshots:
+- `Photos test/radio0100.png`: TLM displayed
+- `Photos test/commande0101.png`: Command sent
+- `PhotosTestmosquittoCosmo/`: MQTT→Cosmos tests
 
-We encourage you to contribute to OpenC3!
+**Troubleshooting:**
+- Check MQTT broker (mosquitto.conf, docker logs)
+- Microservice logs: `docker logs <container>`
+- Free ports: 8080 UDP, 1883 TCP
 
-Contributing is easy.
+**Dependencies:** `paho-mqtt` (auto via requirements.txt)
 
-1. Fork the project
-2. Create a feature branch
-3. Make your changes
-4. Submit a pull request
+---
 
-Before any contributions can be incorporated we do require all contributors to agree to a Contributor License Agreement
-
-This protects both you and us and you retain full rights to any code you write.
-
-## License
-
-This OpenC3 plugin is released under the MIT License. See [LICENSE.txt](LICENSE.txt)
+*satelliteSS Lab1 Plugin - Radio Module MQTT-OpenC3 Bridge*

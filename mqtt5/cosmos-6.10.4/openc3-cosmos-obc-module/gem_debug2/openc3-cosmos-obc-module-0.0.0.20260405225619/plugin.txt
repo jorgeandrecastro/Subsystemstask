@@ -3,13 +3,15 @@ VARIABLE obc_udp_port 8090
 
 TARGET OBC <%= obc_target_name %>
 
-INTERFACE <%= obc_target_name %>_INT openc3/interfaces/udp_interface.py host.docker.internal <%= obc_udp_port %> nil 8092 nil
+INTERFACE <%= obc_target_name %>_INT udp_interface.rb localhost <%= obc_udp_port %> nil 8092 nil
   MAP_CMD_TARGET <%= obc_target_name %>
   MAP_TLM_TARGET <%= obc_target_name %>
 
 MICROSERVICE PACKETHANDLER packethandler-microservice
   CMD python3 packethandler.py
+  WORK_DIR microservices/PACKETHANDLER
   TARGET_NAME <%= obc_target_name %>
 
 MICROSERVICE TLMLOADER tlmloader-microservice
   CMD python3 tlmloader.py
+  WORK_DIR microservices/TLMLOADER
