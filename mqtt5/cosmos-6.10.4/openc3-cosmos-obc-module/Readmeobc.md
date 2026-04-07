@@ -102,4 +102,3 @@ MQTT (paho-mqtt 1.6.1)
 UDP Sockets
 Docker Desktop
 Repository: https://github.com/jorgeandrecastro/satelliteSS-cosmos-obc
-Date: March 17, 2026

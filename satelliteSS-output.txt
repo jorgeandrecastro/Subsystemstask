@@ -5,8 +5,8 @@ PROJECT EXPORT FOR LLMs
 PROJECT INFORMATION:
 --------------------------------------------------
 Project Name: satelliteSS
-Generated On: 2026-04-07 18:32:43 (Europe/Paris / GMT+02:00)
-Total Files Processed: 123
+Generated On: 2026-04-07 18:48:36 (Europe/Paris / GMT+02:00)
+Total Files Processed: 122
 Export Tool: Easy Whole Project to Single Text File for LLMs v1.1.0
 Tool Author: Jota / José Guilherme Pandolfi
 
@@ -97,8 +97,8 @@ PROJECT STRUCTURE
 │   │   │   ├── 📄 plugin.txt (494 B)
 │   │   │   ├── 📄 Rakefile (1.44 KB)
 │   │   │   ├── 📄 README.md (1.8 KB)
-│   │   │   ├── 📄 Readmeobc.md (4.1 KB)
-│   │   │   ├── 📄 Report.md (3.88 KB)
+│   │   │   ├── 📄 Readmeobc.md (4.08 KB)
+│   │   │   ├── 📄 Report.md (3.83 KB)
 │   │   │   └── 📄 requirements.txt (22 B)
 │   │   ├── 📁 openc3-cosmos-radio-module/
 │   │   │   ├── 📁 microservices/
@@ -152,7 +152,7 @@ PROJECT STRUCTURE
 │   │   │   ├── 📄 plugin.txt (1.03 KB)
 │   │   │   ├── 📄 Rakefile (1.44 KB)
 │   │   │   ├── 📄 README.md (2.13 KB)
-│   │   │   ├── 📄 Report.md (4.02 KB)
+│   │   │   ├── 📄 Report.md (4 KB)
 │   │   │   └── 📄 requirements.txt (32 B)
 │   │   ├── 📁 openc3-redis/
 │   │   │   └── 📄 users.acl (610 B)
@@ -195,21 +195,20 @@ PROJECT STRUCTURE
 │   ├── 📄 Readme.md (3.1 KB)
 │   ├── 📄 subClient.py (1.26 KB)
 │   └── 📄 test_mqtt.py (639 B)
-├── 📁 radio module/
-│   ├── 📁 Archives/
-│   │   └── 📄 radioModule.exe (8.43 MB)
-│   ├── 📄 ObcApp.exe (8.44 MB)
-│   ├── 📄 pubClient.py (779 B)
-│   ├── 📄 radioModule.exe (8.43 MB)
-│   └── 📄 subClient.py (1.23 KB)
-└── 📄 TODO.md (584 B)
+└── 📁 radio module/
+    ├── 📁 Archives/
+    │   └── 📄 radioModule.exe (8.43 MB)
+    ├── 📄 ObcApp.exe (8.44 MB)
+    ├── 📄 pubClient.py (779 B)
+    ├── 📄 radioModule.exe (8.43 MB)
+    └── 📄 subClient.py (1.23 KB)
 
 ================================================================================
 PROJECT STATISTICS
 ================================================================================
-Total Files: 123
+Total Files: 122
 Total Directories: 58
-Text Files: 80
+Text Files: 79
 Binary Files: 43
 Total Size: 35.31 MB
 
@@ -218,7 +217,7 @@ FILE TYPES DISTRIBUTION:
 .png            : 28
 .txt            : 27
 .py             : 21
-.md             : 16
+.md             : 15
 .yaml           : 5
 no extension    : 4
 .sh             : 4
@@ -1733,15 +1732,15 @@ FILE: mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module/Readmeobc.md
 
 FILE INFORMATION:
 ----------------------------------------
-Size: 4.1 KB
+Size: 4.08 KB
 Extension: .md
 Language: text
 Location: mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module/Readmeobc.md
 Relative Path: mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module
 Created: 2026-03-17 20:29:29 (Europe/Paris / GMT+01:00)
-Modified: 2026-03-17 20:30:13 (Europe/Paris / GMT+01:00)
-MD5: e5c286ef8b93e4b99e416b29ee76369d
-SHA256: f0c24e053a9a3e020f8558c7bedf2c396cde2b0f203fa28f185d20e7285b4dc3
+Modified: 2026-04-07 18:48:35 (Europe/Paris / GMT+02:00)
+MD5: 87c9dbe5de2afdfe710fd98196befd27
+SHA256: 741f01b9eac963b38ee5b1fc97595ff299663448260b82d92873ce74c3614be0
 Encoding: UTF-8
 
 FILE CONTENT:
@@ -1850,7 +1849,7 @@ MQTT (paho-mqtt 1.6.1)
 UDP Sockets
 Docker Desktop
 Repository: https://github.com/jorgeandrecastro/satelliteSS-cosmos-obc
-Date: March 17, 2026
+
 ================================================================================
 
 
@@ -1860,15 +1859,15 @@ FILE: mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module/Report.md
 
 FILE INFORMATION:
 ----------------------------------------
-Size: 3.88 KB
+Size: 3.83 KB
 Extension: .md
 Language: text
 Location: mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module/Report.md
 Relative Path: mqtt5/cosmos-6.10.4/openc3-cosmos-obc-module
 Created: 2026-04-07 13:42:02 (Europe/Paris / GMT+02:00)
-Modified: 2026-04-07 18:32:10 (Europe/Paris / GMT+02:00)
-MD5: e44a0247b118e226564ebc0359697c1c
-SHA256: dd7d90f070acc180233ecad07f68a3c5573f209aea984392cbd20e0c510b4802
+Modified: 2026-04-07 18:46:38 (Europe/Paris / GMT+02:00)
+MD5: b2f0900e54c2fab8ee6258c31124991a
+SHA256: 1b36d260726f0d3f0bbc1e8d1ec9b1cf0b3116b1f3ad0230027168b2980bc72b
 Encoding: UTF-8
 
 FILE CONTENT:
@@ -1970,7 +1969,7 @@ ObcApp.exe
 
 **OBC module operational and integrated! 🚀**
 
-*based on Readmeobc.md & project structure - 2024*
+
 
 
 ================================================================================
@@ -2811,15 +2810,15 @@ FILE: mqtt5/cosmos-6.10.4/openc3-cosmos-radio-module/Report.md
 
 FILE INFORMATION:
 ----------------------------------------
-Size: 4.02 KB
+Size: 4 KB
 Extension: .md
 Language: text
 Location: mqtt5/cosmos-6.10.4/openc3-cosmos-radio-module/Report.md
 Relative Path: mqtt5/cosmos-6.10.4/openc3-cosmos-radio-module
 Created: 2026-04-07 13:44:12 (Europe/Paris / GMT+02:00)
-Modified: 2026-04-07 18:32:26 (Europe/Paris / GMT+02:00)
-MD5: f4295f9725e57027359d070c656878ed
-SHA256: ba2c5c6bdef53d1c6d5beeffd19afaf138c995024c522ffe0ed096896898151f
+Modified: 2026-04-07 18:47:42 (Europe/Paris / GMT+02:00)
+MD5: a460e6196e132c3ae6d52f1a265890c1
+SHA256: 8066853a9ff536017c44b2cbae088f7434e5ca2e9100f05459c94a4ae719e473
 Encoding: UTF-8
 
 FILE CONTENT:
@@ -2938,7 +2937,7 @@ docker compose -f mqtt5/compose.yml up
 
 **Radio module functional and integrated into OpenC3 via MQTT! 🚀**
 
-*satelliteSS Lab1 - 2024*
+
 
 
 ================================================================================
@@ -7824,36 +7823,3 @@ BINARY/EXCLUDED FILES (not included in text content)
 ================================================================================
 - radio module/ObcApp.exe
 - radio module/radioModule.exe
-
-
-================================================================================
-FILE: TODO.md
-================================================================================
-
-FILE INFORMATION:
-----------------------------------------
-Size: 584 B
-Extension: .md
-Language: text
-Location: TODO.md
-Relative Path: root
-Created: 2026-04-07 18:31:49 (Europe/Paris / GMT+02:00)
-Modified: 2026-04-07 18:32:41 (Europe/Paris / GMT+02:00)
-MD5: 4d6b71571f3121ad85dbab014d9ff2b4
-SHA256: 1b3e04e7cb77559379b2becde62335bc879b138b1fa48f2ffddeb76ef8c27ba1
-Encoding: UTF-8
-
-FILE CONTENT:
-----------------------------------------
-# TODO: Integrate Photos into Report.md Files - satelliteSS Lab1 ✅
-
-## Plan Steps:
-1. [x] Edit OBC Report.md: Embed all 6 photos from photosTest/ with explanations. ✅
-2. [x] Edit Radio Report.md: Embed 12 photos from "Photos test/" and "PhotosTestmosquittoCosmo/" with explanations. ✅
-3. [x] Verify renders in VSCode Markdown preview (images embedded, professional layout). ✅
-4. [x] Update TODO.md with completion. ✅
-5. [x] Task complete: Reports now professional with embedded images and explanations.
-
-**All done! View in VSCode Markdown preview: Ctrl+Shift+V**
-
-================================================================================

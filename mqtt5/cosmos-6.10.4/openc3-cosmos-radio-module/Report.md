@@ -112,5 +112,5 @@ docker compose -f mqtt5/compose.yml up
 
 **Radio module functional and integrated into OpenC3 via MQTT! 🚀**
 
-*satelliteSS Lab1 - 2024*
+
 

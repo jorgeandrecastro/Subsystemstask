@@ -95,5 +95,5 @@ ObcApp.exe
 
 **OBC module operational and integrated! 🚀**
 
-*based on Readmeobc.md & project structure - 2024*
+
 
